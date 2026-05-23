@@ -56,7 +56,7 @@
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-10">
       <a href="#join" class="bg-paper border border-ink/15 hover:border-usfgreen px-5 py-4 rounded-xl text-sm font-semibold text-ink hover:text-usfgreen transition flex items-center justify-between">Join the lab <span>&rarr;</span></a>
-      <a href="#idea" class="bg-paper border border-ink/15 hover:border-usfgreen px-5 py-4 rounded-xl text-sm font-semibold text-ink hover:text-usfgreen transition flex items-center justify-between">Submit a project idea <span>&rarr;</span></a>
+      <a href="#idea" class="bg-paper border border-ink/15 hover:border-usfgreen px-5 py-4 rounded-xl text-sm font-semibold text-ink hover:text-usfgreen transition flex items-center justify-between">Share a problem or idea <span>&rarr;</span></a>
       <a href="#partners" class="bg-paper border border-ink/15 hover:border-usfgreen px-5 py-4 rounded-xl text-sm font-semibold text-ink hover:text-usfgreen transition flex items-center justify-between">Industry partners <span>&rarr;</span></a>
       <a href="#subscribe" class="bg-paper border border-ink/15 hover:border-usfgreen px-5 py-4 rounded-xl text-sm font-semibold text-ink hover:text-usfgreen transition flex items-center justify-between">Get announcements <span>&rarr;</span></a>
     </div>
@@ -104,39 +104,55 @@
   <div class="max-w-5xl mx-auto px-6 lg:px-10">
     <div class="grid md:grid-cols-3 gap-10">
       <div>
-        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-3">02 · Ideas</p>
-        <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink leading-tight">Submit a project idea.</h2>
+        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-3">02 · Problems & Ideas</p>
+        <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink leading-tight">Share a problem or an idea.</h2>
       </div>
       <div class="md:col-span-2">
-        <p class="text-lg text-ink-soft leading-relaxed mb-6">Got a question, a half-baked pilot, or a problem you keep running into in clinic? We use a <strong class="text-ink">PICO frame</strong> to keep submissions sharp and reviewable - it works for clinical, educational, and informatics projects alike.</p>
+        <p class="text-lg text-ink-soft leading-relaxed mb-6">Most clinicians don't know what AI <em>could</em> build - but they know exactly what's slowing them down. Tell us about a <strong class="text-ink">pain point</strong> in your day, and we'll figure out together whether AI can help. If you already have a developed project idea, we use a <strong class="text-ink">PICO frame</strong>.</p>
 
-        <div class="bg-paper rounded-2xl p-6 border border-ink/10 mb-6">
-          <p class="text-xs font-semibold uppercase tracking-wider text-usfgreen mb-4">PICO format</p>
-          <dl class="space-y-3 text-sm">
-            <div class="grid grid-cols-[auto_1fr] gap-3 items-baseline">
-              <dt class="font-display text-2xl font-bold text-usfgreen">P</dt>
-              <dd><strong class="text-ink">Population / setting</strong> (e.g., adult primary-care patients with diabetes; PGY-1 residents at TGH)</dd>
-            </div>
-            <div class="grid grid-cols-[auto_1fr] gap-3 items-baseline">
-              <dt class="font-display text-2xl font-bold text-usfgreen">I</dt>
-              <dd><strong class="text-ink">Intervention / AI tool or approach</strong> (a model, a workflow, a curriculum, an evaluation)</dd>
-            </div>
-            <div class="grid grid-cols-[auto_1fr] gap-3 items-baseline">
-              <dt class="font-display text-2xl font-bold text-usfgreen">C</dt>
-              <dd><strong class="text-ink">Comparison / current state</strong> (what's happening now without it?)</dd>
-            </div>
-            <div class="grid grid-cols-[auto_1fr] gap-3 items-baseline">
-              <dt class="font-display text-2xl font-bold text-usfgreen">O</dt>
-              <dd><strong class="text-ink">Outcome</strong> (what does success look like? measurable + time horizon)</dd>
-            </div>
-          </dl>
-          <div class="mt-5 pt-5 border-t border-ink/10 text-sm text-ink-soft">
-            <p><strong class="text-ink">Plus:</strong> stage (hunch / concept / pilot / funded), help needed (clinical, technical, informatics, education, stats, industry), and your name + USF affiliation.</p>
+        <div class="grid md:grid-cols-2 gap-4 mb-6">
+
+          <div class="bg-paper rounded-2xl p-6 border border-ink/10">
+            <p class="text-xs font-semibold uppercase tracking-wider text-usfgold-warm mb-4">Path A · Pain Point</p>
+            <p class="text-sm text-ink-soft mb-4">Best for clinical friction you encounter regularly.</p>
+            <ul class="space-y-2 text-sm text-ink-soft">
+              <li><strong class="text-ink">Where it happens</strong> (clinic, EHR step, ward, education)</li>
+              <li><strong class="text-ink">What's slowing you down</strong> in plain words</li>
+              <li><strong class="text-ink">Who it affects</strong> (clinicians, residents, patients, staff)</li>
+              <li><strong class="text-ink">How often</strong> it comes up</li>
+              <li><strong class="text-ink">Why it matters</strong> (time, safety, cost, satisfaction)</li>
+            </ul>
           </div>
+
+          <div class="bg-paper rounded-2xl p-6 border border-ink/10">
+            <p class="text-xs font-semibold uppercase tracking-wider text-usfgreen mb-4">Path B · PICO (developed idea)</p>
+            <p class="text-sm text-ink-soft mb-4">Best when you already know the study question.</p>
+            <dl class="space-y-2 text-sm">
+              <div class="grid grid-cols-[auto_1fr] gap-2 items-baseline">
+                <dt class="font-display text-base font-bold text-usfgreen">P</dt>
+                <dd class="text-ink-soft"><strong class="text-ink">Population</strong> / setting</dd>
+              </div>
+              <div class="grid grid-cols-[auto_1fr] gap-2 items-baseline">
+                <dt class="font-display text-base font-bold text-usfgreen">I</dt>
+                <dd class="text-ink-soft"><strong class="text-ink">Intervention</strong> / AI approach</dd>
+              </div>
+              <div class="grid grid-cols-[auto_1fr] gap-2 items-baseline">
+                <dt class="font-display text-base font-bold text-usfgreen">C</dt>
+                <dd class="text-ink-soft"><strong class="text-ink">Comparison</strong> / current state</dd>
+              </div>
+              <div class="grid grid-cols-[auto_1fr] gap-2 items-baseline">
+                <dt class="font-display text-base font-bold text-usfgreen">O</dt>
+                <dd class="text-ink-soft"><strong class="text-ink">Outcome</strong> / measurable goal</dd>
+              </div>
+            </dl>
+          </div>
+
         </div>
 
+        <p class="text-sm text-ink-soft mb-5">The email template includes both paths - fill in whichever applies (or both), plus your name and USF affiliation.</p>
+
         <button data-template="idea" class="open-email inline-flex items-center gap-2 bg-usfgreen text-paper px-7 py-4 rounded-full font-semibold hover:bg-usfgreen-deep transition shadow-lg shadow-usfgreen/20 text-sm">
-          Open pre-filled PICO email
+          Open pre-filled email
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
         </button>
       </div>
@@ -225,7 +241,7 @@
         <p class="text-xs font-semibold uppercase tracking-wider text-paper mb-4">Get Involved</p>
         <ul class="space-y-2 text-sm">
           <li><a href="#join" class="hover:text-usfgold-warm transition">Join the lab</a></li>
-          <li><a href="#idea" class="hover:text-usfgold-warm transition">Submit an idea</a></li>
+          <li><a href="#idea" class="hover:text-usfgold-warm transition">Share a problem or idea</a></li>
           <li><a href="#partners" class="hover:text-usfgold-warm transition">Industry partners</a></li>
           <li><a href="#subscribe" class="hover:text-usfgold-warm transition">Get announcements</a></li>
           <li><a href="mailto:khanna@usf.edu" class="hover:text-usfgold-warm transition">Contact</a></li>
@@ -245,11 +261,28 @@
 
   const templates = {
     idea: {
-      subject: "TRAIN-A-BULL - Project Idea (PICO)",
+      subject: "TRAIN-A-BULL - Problem or Idea Submission",
       body: `Hi Karim,
 
-I'd like to propose a project for TRAIN-A-BULL. Framed in PICO:
+I'd like to share a problem or idea with TRAIN-A-BULL. Filling in whichever path fits (or both):
 
+=========================================
+PATH A - PAIN POINT (start here if there's something slowing you down)
+=========================================
+WHERE it happens (clinic, EHR step, ward, education, etc.):
+
+WHAT'S SLOWING YOU DOWN (in plain words):
+
+WHO it affects (clinicians, residents, patients, staff):
+
+HOW OFTEN it comes up:
+
+WHY IT MATTERS (time, safety, cost, satisfaction, outcomes):
+
+
+=========================================
+PATH B - PROJECT IDEA (PICO format, if you have a developed concept)
+=========================================
 P - POPULATION / SETTING
 (e.g., adult primary-care patients with diabetes; PGY-1 residents at TGH)
 
@@ -272,7 +305,10 @@ STAGE
 [ ] Pilot underway - looking for collaborators
 [ ] Funded / IRB-approved
 
+
+=========================================
 HELP I'M LOOKING FOR
+=========================================
 [ ] Clinical input
 [ ] Technical / ML
 [ ] Informatics / data
@@ -281,7 +317,10 @@ HELP I'M LOOKING FOR
 [ ] Industry partnership
 [ ] Other:
 
+
+=========================================
 ABOUT ME
+=========================================
 Name:
 USF affiliation:
 Best email:
