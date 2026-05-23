@@ -182,28 +182,27 @@
         <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink leading-tight">Get announcements.</h2>
       </div>
       <div class="md:col-span-2">
-        <p class="text-lg text-ink-soft leading-relaxed mb-6">Not ready to join, propose a project, or partner - but want to know what we're up to? Drop your email and we'll add you to the announcement list (journal club papers, new projects, events).</p>
+        <p class="text-lg text-ink-soft leading-relaxed mb-6">Not ready to join, propose a project, or partner - but want to know what we're up to? Sign up for announcements: journal club papers, new projects, events.</p>
 
-        <form id="subscribeForm" class="bg-paper rounded-2xl p-6 border border-ink/10 mb-3">
-          <label for="subscribeEmail" class="block text-xs font-semibold uppercase tracking-wider text-usfgreen mb-3">Your email</label>
-          <div class="flex flex-col sm:flex-row gap-3">
-            <input
-              id="subscribeEmail"
-              type="email"
-              required
-              placeholder="you@example.edu"
-              class="flex-1 px-4 py-3 rounded-full border border-ink/15 bg-paper-warm/30 focus:outline-none focus:border-usfgreen focus:ring-2 focus:ring-usfgreen/20 text-sm"
-            />
-            <button
-              type="submit"
-              class="inline-flex items-center justify-center gap-2 bg-usfgreen text-paper px-6 py-3 rounded-full font-semibold hover:bg-usfgreen-deep transition text-sm shadow-lg shadow-usfgreen/20"
-            >
-              Subscribe
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-            </button>
-          </div>
-        </form>
-        <p class="text-xs text-ink-soft/70">Submitting opens your email client with a pre-filled subscribe request to khanna@usf.edu. No spam, no third parties - just announcements.</p>
+        <div class="bg-paper rounded-2xl p-6 border border-ink/10 mb-3">
+          <p class="text-xs font-semibold uppercase tracking-wider text-usfgreen mb-3">What you'll be asked</p>
+          <ul class="space-y-1.5 text-sm text-ink-soft mb-5">
+            <li><strong class="text-ink">Email address</strong> (required)</li>
+            <li><strong class="text-ink">Name</strong> (required)</li>
+            <li><strong class="text-ink">USF affiliation</strong> (required - school / department / program)</li>
+          </ul>
+          <!--
+            REPLACE this href with your Google Form's public share link.
+            Create the form at forms.google.com while logged into taiyohanna@gmail.com
+            with Name + USF affiliation marked as required questions.
+          -->
+          <a href="https://forms.google.com" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 bg-usfgreen text-paper px-6 py-3 rounded-full font-semibold hover:bg-usfgreen-deep transition text-sm shadow-lg shadow-usfgreen/20">
+            Open signup form
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+        <p class="text-xs text-ink-soft/70">Opens a Google Form. Responses go directly to taiyohanna@gmail.com. No third parties beyond Google.</p>
       </div>
     </div>
   </div>
@@ -387,19 +386,6 @@ Thanks,
     });
   });
 
-  // Subscribe form: opens user's email client with their address in the body
-  const subForm = document.getElementById('subscribeForm');
-  if (subForm) {
-    subForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const email = document.getElementById('subscribeEmail').value.trim();
-      if (!email) return;
-      const subject = "TRAIN-A-BULL - Subscribe me to announcements";
-      const body = `Hi Karim,\n\nPlease add me to the TRAIN-A-BULL announcements list.\n\nEmail: ${email}\nName (optional):\nUSF affiliation (optional):\n\nThanks,`;
-      const url = `mailto:khanna@usf.edu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = url;
-    });
-  }
 </script>
 </body>
 </html>
