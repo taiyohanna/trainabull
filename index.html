@@ -3,52 +3,41 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TRAINABULL — Training Bulls for the age of AI</title>
-<meta name="description" content="TRAINABULL is the USF collaborative for clinical informatics and artificial intelligence in healthcare — bridging medicine, nursing, engineering, and information sciences to advance AI in care, education, and research." />
+<title>TRAIN-A-BULL - Training Bulls for the age of AI</title>
+<meta name="description" content="TRAIN-A-BULL is the USF collaborative for clinical informatics and artificial intelligence in healthcare - bridging medicine, nursing, engineering, and information sciences to advance AI in care, education, and research." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          usfgreen: { DEFAULT: '#006747', deep: '#004D34', dark: '#00321F' },
-          usfgold:  { DEFAULT: '#CFC493', warm: '#E8A317', bright: '#FDB927' },
-          ink:      { DEFAULT: '#0F1714', soft: '#3B4A44' },
-          paper:    { DEFAULT: '#FAFAF7', warm: '#F4F1E8' },
-        },
-        fontFamily: {
-          display: ['Fraunces', 'Georgia', 'serif'],
-          sans:    ['Inter', 'system-ui', 'sans-serif'],
-        },
-      },
-    },
-  };
+  tailwind.config = { theme: { extend: {
+    colors: { usfgreen: { DEFAULT: '#006747', deep: '#004D34', dark: '#00321F' }, usfgold: { DEFAULT: '#CFC493', warm: '#E8A317', bright: '#FDB927' }, ink: { DEFAULT: '#0F1714', soft: '#3B4A44' }, paper: { DEFAULT: '#FAFAF7', warm: '#F4F1E8' } },
+    fontFamily: { display: ['Fraunces', 'Georgia', 'serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }
+  }}};
 </script>
 <link rel="stylesheet" href="assets/css/styles.css" />
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+<style>
+  /* Landing page is a single static viewport. Prevent body scroll on tall screens; allow overflow on small. */
+  html, body { height: 100%; }
+  @media (min-height: 720px) and (min-width: 768px) { body.landing { overflow: hidden; } }
+</style>
 </head>
 
-<body class="bg-paper text-ink font-sans antialiased">
+<body class="bg-paper text-ink font-sans antialiased landing">
 
 <!-- NAV -->
 <header class="fixed top-0 inset-x-0 z-50 bg-paper/85 backdrop-blur-md border-b border-ink/5">
   <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
     <a href="index.html" class="flex items-center gap-2 font-display font-bold text-xl tracking-tight">
-      <span class="text-usfgreen">TR</span><span class="text-usfgold-warm text-2xl">AI</span><span class="text-usfgreen">NABULL</span>
+      <span class="text-usfgreen">TR</span><span class="text-usfgold-warm text-2xl">AI</span><span class="text-usfgreen">N-A-BULL</span>
     </a>
     <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-soft">
       <a href="about.html" class="hover:text-usfgreen transition">The Lab</a>
       <a href="projects.html" class="hover:text-usfgreen transition">Projects</a>
-      <a href="publications.html" class="hover:text-usfgreen transition">Publications</a>
       <a href="journal-club.html" class="hover:text-usfgreen transition">Journal Club</a>
       <a href="learn.html" class="hover:text-usfgreen transition">Learn</a>
-      <a href="get-involved.html" class="inline-flex items-center gap-2 bg-usfgreen text-paper px-4 py-2 rounded-full hover:bg-usfgreen-deep transition">
-        Get Involved
-        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-      </a>
+      <a href="get-involved.html" class="inline-flex items-center gap-2 bg-usfgreen text-paper px-4 py-2 rounded-full hover:bg-usfgreen-deep transition">Get Involved →</a>
     </nav>
     <button id="mobileToggle" class="md:hidden text-ink p-2" aria-label="Menu">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -58,7 +47,6 @@
     <nav class="px-6 py-4 flex flex-col gap-3 text-sm font-medium">
       <a href="about.html" class="py-2">The Lab</a>
       <a href="projects.html" class="py-2">Projects</a>
-      <a href="publications.html" class="py-2">Publications</a>
       <a href="journal-club.html" class="py-2">Journal Club</a>
       <a href="learn.html" class="py-2">Learn</a>
       <a href="get-involved.html" class="py-2 text-usfgreen font-semibold">Get Involved →</a>
@@ -66,215 +54,56 @@
   </div>
 </header>
 
-<!-- HERO -->
-<section class="relative pt-32 pb-24 lg:pt-44 lg:pb-32 overflow-hidden">
-  <!-- background pattern -->
+<!-- HERO - single viewport, no scroll -->
+<main class="relative min-h-screen flex items-center overflow-hidden pt-20 pb-12">
+  <!-- background -->
   <div class="absolute inset-0 -z-10 opacity-[0.04]" style="background-image: radial-gradient(circle at 1px 1px, #006747 1px, transparent 0); background-size: 24px 24px;"></div>
   <div class="absolute -top-32 -right-32 w-[36rem] h-[36rem] rounded-full bg-usfgold-warm/10 blur-3xl -z-10"></div>
   <div class="absolute -bottom-32 -left-32 w-[36rem] h-[36rem] rounded-full bg-usfgreen/10 blur-3xl -z-10"></div>
 
-  <div class="max-w-7xl mx-auto px-6 lg:px-10">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-usfgreen/10 text-usfgreen text-xs font-semibold tracking-wider uppercase mb-8">
+  <div class="w-full max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-usfgreen/10 text-usfgreen text-[10px] sm:text-xs font-semibold tracking-wider uppercase mb-6">
       <span class="w-1.5 h-1.5 rounded-full bg-usfgreen animate-pulse"></span>
-      A USF Health Collaborative · Clinical Informatics + AI
+      A USF Collaborative · Clinical Informatics + AI
     </div>
 
-    <!-- WORDMARK -->
-    <h1 class="font-display font-extrabold tracking-tight leading-[0.9] text-usfgreen mb-8">
-      <span class="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
-        TR<span class="text-usfgold-warm text-7xl sm:text-8xl md:text-9xl lg:text-[11rem]">AI</span>NABULL
+    <!-- WORDMARK: TR + AI (gold, larger) + N-A-BULL -->
+    <h1 class="font-display font-extrabold tracking-tight leading-[0.9] text-usfgreen mb-6">
+      <span class="block text-5xl sm:text-7xl md:text-8xl lg:text-9xl">
+        TR<span class="text-usfgold-warm text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">AI</span>N-A-BULL
       </span>
     </h1>
 
-    <p class="font-display italic text-2xl md:text-3xl lg:text-4xl text-ink-soft max-w-3xl mb-10 leading-snug">
+    <p class="font-display italic text-xl sm:text-2xl md:text-3xl lg:text-4xl text-ink-soft max-w-3xl mb-8 leading-snug">
       Training Bulls for the age of AI.
     </p>
 
-    <p class="text-lg md:text-xl text-ink-soft max-w-3xl mb-12 leading-relaxed">
-      A USF community where physicians, nurses, students, engineers, and health-IT collaborators come together to advance <span class="text-ink font-semibold">clinical informatics and artificial intelligence</span> — sharing what works, building what's missing, and refusing to reinvent the wheel.
+    <p class="text-base sm:text-lg md:text-xl text-ink-soft max-w-3xl mb-8 leading-relaxed">
+      A USF community for clinical informatics and artificial intelligence - physicians, nurses, students, engineers, and information scientists building the future of healthcare AI together.
     </p>
 
-    <div class="flex flex-wrap gap-4">
-      <a href="get-involved.html#join" class="inline-flex items-center gap-2 bg-usfgreen text-paper px-7 py-4 rounded-full font-semibold hover:bg-usfgreen-deep transition shadow-lg shadow-usfgreen/20">
+    <div class="flex flex-wrap gap-3 sm:gap-4">
+      <a href="get-involved.html#join" class="inline-flex items-center gap-2 bg-usfgreen text-paper px-6 py-3.5 rounded-full font-semibold hover:bg-usfgreen-deep transition shadow-lg shadow-usfgreen/20 text-sm sm:text-base">
         Join the Lab
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
-      <a href="get-involved.html#idea" class="inline-flex items-center gap-2 bg-paper border-2 border-usfgreen text-usfgreen px-7 py-4 rounded-full font-semibold hover:bg-usfgreen hover:text-paper transition">
-        Submit a Project Idea
+      <a href="get-involved.html#idea" class="inline-flex items-center gap-2 bg-paper border-2 border-usfgreen text-usfgreen px-6 py-3.5 rounded-full font-semibold hover:bg-usfgreen hover:text-paper transition text-sm sm:text-base">
+        Submit an Idea
       </a>
-      <a href="get-involved.html#partners" class="inline-flex items-center gap-2 text-ink-soft hover:text-usfgreen px-7 py-4 font-semibold transition">
-        For Industry Partners →
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- MISSION / "TRAINABULL. RELIABULL. UNSTOPPABULL." -->
-<section class="bg-usfgreen text-paper py-24 lg:py-32 relative overflow-hidden">
-  <div class="absolute inset-0 opacity-[0.06]" style="background-image: radial-gradient(circle at 1px 1px, #CFC493 1px, transparent 0); background-size: 32px 32px;"></div>
-  <div class="max-w-6xl mx-auto px-6 lg:px-10 relative">
-    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgold mb-6">Our Mission</p>
-    <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-8">
-      Bridging clinical care and artificial intelligence — <span class="text-usfgold-warm italic">together</span>.
-    </h2>
-    <p class="text-xl md:text-2xl text-paper/85 max-w-3xl mb-12 leading-relaxed">
-      TRAINABULL exists to keep the USF community from reinventing the wheel. We connect physicians, nurses, residents, students, computer scientists, and information specialists around real problems in healthcare AI — and translate that work into care, curricula, and partnerships.
-    </p>
-    <div class="grid sm:grid-cols-3 gap-6 text-center pt-8 border-t border-paper/15">
-      <div>
-        <div class="font-display font-bold text-3xl md:text-4xl text-usfgold-warm">TR<span class="text-usfgold-bright">AI</span>NABULL</div>
-        <p class="text-sm text-paper/60 mt-2 uppercase tracking-wider">We teach.</p>
-      </div>
-      <div>
-        <div class="font-display font-bold text-3xl md:text-4xl text-usfgold-warm">REL<span class="text-usfgold-bright">IA</span>BULL</div>
-        <p class="text-sm text-paper/60 mt-2 uppercase tracking-wider">We validate.</p>
-      </div>
-      <div>
-        <div class="font-display font-bold text-3xl md:text-4xl text-usfgold-warm">UNSTOPPABULL</div>
-        <p class="text-sm text-paper/60 mt-2 uppercase tracking-wider">We ship.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOUR PILLARS -->
-<section class="py-24 lg:py-32">
-  <div class="max-w-7xl mx-auto px-6 lg:px-10">
-    <div class="max-w-3xl mb-16">
-      <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-4">What We Do</p>
-      <h2 class="font-display text-4xl md:text-5xl font-semibold text-ink leading-tight">Four pillars, one community.</h2>
-    </div>
-    <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
-      <a href="projects.html" class="group p-8 lg:p-10 rounded-2xl border border-ink/10 hover:border-usfgreen hover:shadow-xl hover:shadow-usfgreen/5 transition bg-paper-warm/30">
-        <div class="flex items-center justify-between mb-6">
-          <div class="w-12 h-12 rounded-xl bg-usfgreen/10 text-usfgreen flex items-center justify-center">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
-          </div>
-          <span class="text-xs font-semibold uppercase tracking-wider text-ink-soft/60 group-hover:text-usfgreen transition">01</span>
-        </div>
-        <h3 class="font-display text-2xl md:text-3xl font-semibold text-ink mb-3">Research Projects</h3>
-        <p class="text-ink-soft leading-relaxed mb-4">Active investigations across clinical AI — from model evaluation to workflow integration to real-world deployment.</p>
-        <span class="inline-flex items-center gap-1 text-sm font-semibold text-usfgreen">See projects <span class="group-hover:translate-x-1 transition">→</span></span>
-      </a>
-
-      <a href="journal-club.html" class="group p-8 lg:p-10 rounded-2xl border border-ink/10 hover:border-usfgreen hover:shadow-xl hover:shadow-usfgreen/5 transition bg-paper-warm/30">
-        <div class="flex items-center justify-between mb-6">
-          <div class="w-12 h-12 rounded-xl bg-usfgreen/10 text-usfgreen flex items-center justify-center">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-          </div>
-          <span class="text-xs font-semibold uppercase tracking-wider text-ink-soft/60 group-hover:text-usfgreen transition">02</span>
-        </div>
-        <h3 class="font-display text-2xl md:text-3xl font-semibold text-ink mb-3">Monthly Journal Club</h3>
-        <p class="text-ink-soft leading-relaxed mb-4">One paper, one hour, one community. Open to anyone at USF curious about how AI is reshaping medicine.</p>
-        <span class="inline-flex items-center gap-1 text-sm font-semibold text-usfgreen">Next meeting <span class="group-hover:translate-x-1 transition">→</span></span>
-      </a>
-
-      <a href="learn.html" class="group p-8 lg:p-10 rounded-2xl border border-ink/10 hover:border-usfgreen hover:shadow-xl hover:shadow-usfgreen/5 transition bg-paper-warm/30">
-        <div class="flex items-center justify-between mb-6">
-          <div class="w-12 h-12 rounded-xl bg-usfgreen/10 text-usfgreen flex items-center justify-center">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/></svg>
-          </div>
-          <span class="text-xs font-semibold uppercase tracking-wider text-ink-soft/60 group-hover:text-usfgreen transition">03</span>
-        </div>
-        <h3 class="font-display text-2xl md:text-3xl font-semibold text-ink mb-3">Asynchronous Curricula</h3>
-        <p class="text-ink-soft leading-relaxed mb-4">Curated AI-in-medicine courses for students and trainees — STFM, NBME, and the best of what's out there.</p>
-        <span class="inline-flex items-center gap-1 text-sm font-semibold text-usfgreen">Start learning <span class="group-hover:translate-x-1 transition">→</span></span>
-      </a>
-
-      <a href="publications.html" class="group p-8 lg:p-10 rounded-2xl border border-ink/10 hover:border-usfgreen hover:shadow-xl hover:shadow-usfgreen/5 transition bg-paper-warm/30">
-        <div class="flex items-center justify-between mb-6">
-          <div class="w-12 h-12 rounded-xl bg-usfgreen/10 text-usfgreen flex items-center justify-center">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-          </div>
-          <span class="text-xs font-semibold uppercase tracking-wider text-ink-soft/60 group-hover:text-usfgreen transition">04</span>
-        </div>
-        <h3 class="font-display text-2xl md:text-3xl font-semibold text-ink mb-3">Publications & Talks</h3>
-        <p class="text-ink-soft leading-relaxed mb-4">A record of the work — papers, posters, podcasts, and keynotes coming out of the TRAINABULL community.</p>
-        <span class="inline-flex items-center gap-1 text-sm font-semibold text-usfgreen">See the record <span class="group-hover:translate-x-1 transition">→</span></span>
+      <a href="get-involved.html#partners" class="inline-flex items-center gap-2 text-ink-soft hover:text-usfgreen px-4 py-3.5 font-semibold transition text-sm sm:text-base">
+        Industry Partners →
       </a>
     </div>
   </div>
-</section>
 
-<!-- WHO WE ARE FOR -->
-<section class="py-24 bg-paper-warm/40 border-y border-ink/5">
-  <div class="max-w-6xl mx-auto px-6 lg:px-10">
-    <div class="max-w-3xl mb-12">
-      <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-4">Who Belongs Here</p>
-      <h2 class="font-display text-4xl md:text-5xl font-semibold text-ink leading-tight">A truly cross-disciplinary collaborative.</h2>
-    </div>
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-sm">
-      <div class="bg-paper rounded-xl px-5 py-4 border border-ink/5">Physicians & Faculty</div>
-      <div class="bg-paper rounded-xl px-5 py-4 border border-ink/5">Residents & Fellows</div>
-      <div class="bg-paper rounded-xl px-5 py-4 border border-ink/5">Medical Students</div>
-      <div class="bg-paper rounded-xl px-5 py-4 border border-ink/5">Nursing Faculty & Students</div>
-      <div class="bg-paper rounded-xl px-5 py-4 border border-ink/5">CS / Engineering</div>
-      <div class="bg-paper rounded-xl px-5 py-4 border border-ink/5">School of Information</div>
-      <div class="bg-paper rounded-xl px-5 py-4 border border-ink/5">Health IT Professionals</div>
-      <div class="bg-paper rounded-xl px-5 py-4 border border-ink/5">Industry Partners</div>
-    </div>
+  <!-- corner mark -->
+  <div class="absolute bottom-4 right-6 lg:right-10 text-[10px] uppercase tracking-[0.2em] text-ink-soft/50 hidden sm:block">
+    USF · Tampa, FL · <a href="https://github.com/taiyohanna/trainabull" class="hover:text-usfgreen transition">GitHub</a>
   </div>
-</section>
-
-<!-- CTA -->
-<section class="py-24 lg:py-32">
-  <div class="max-w-5xl mx-auto px-6 lg:px-10 text-center">
-    <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-ink leading-tight mb-6">
-      Build the future of <span class="italic text-usfgreen">clinical AI</span> with us.
-    </h2>
-    <p class="text-lg md:text-xl text-ink-soft max-w-2xl mx-auto mb-10 leading-relaxed">
-      Whether you have an idea, a paper to discuss, a product to test, or just curiosity — there's a path in.
-    </p>
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="get-involved.html#join" class="inline-flex items-center gap-2 bg-usfgreen text-paper px-7 py-4 rounded-full font-semibold hover:bg-usfgreen-deep transition shadow-lg shadow-usfgreen/20">Join the lab</a>
-      <a href="get-involved.html#idea" class="inline-flex items-center gap-2 bg-paper border-2 border-usfgreen text-usfgreen px-7 py-4 rounded-full font-semibold hover:bg-usfgreen hover:text-paper transition">Submit a project idea</a>
-      <a href="get-involved.html#partners" class="inline-flex items-center gap-2 bg-ink text-paper px-7 py-4 rounded-full font-semibold hover:bg-ink/85 transition">Industry partners</a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-ink text-paper/70 py-16">
-  <div class="max-w-7xl mx-auto px-6 lg:px-10">
-    <div class="grid md:grid-cols-4 gap-10 mb-12">
-      <div class="md:col-span-2">
-        <div class="font-display font-bold text-2xl mb-4">
-          <span class="text-paper">TR</span><span class="text-usfgold-warm text-3xl">AI</span><span class="text-paper">NABULL</span>
-        </div>
-        <p class="text-sm leading-relaxed max-w-md">A USF community advancing clinical informatics and artificial intelligence — together. Based in Tampa, FL.</p>
-      </div>
-      <div>
-        <p class="text-xs font-semibold uppercase tracking-wider text-paper mb-4">Explore</p>
-        <ul class="space-y-2 text-sm">
-          <li><a href="about.html" class="hover:text-usfgold-warm transition">The Lab</a></li>
-          <li><a href="projects.html" class="hover:text-usfgold-warm transition">Projects</a></li>
-          <li><a href="publications.html" class="hover:text-usfgold-warm transition">Publications</a></li>
-          <li><a href="journal-club.html" class="hover:text-usfgold-warm transition">Journal Club</a></li>
-          <li><a href="learn.html" class="hover:text-usfgold-warm transition">Learn</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="text-xs font-semibold uppercase tracking-wider text-paper mb-4">Get Involved</p>
-        <ul class="space-y-2 text-sm">
-          <li><a href="get-involved.html#join" class="hover:text-usfgold-warm transition">Join the lab</a></li>
-          <li><a href="get-involved.html#idea" class="hover:text-usfgold-warm transition">Submit an idea</a></li>
-          <li><a href="get-involved.html#partners" class="hover:text-usfgold-warm transition">Industry partners</a></li>
-          <li><a href="mailto:khanna@usf.edu" class="hover:text-usfgold-warm transition">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pt-8 border-t border-paper/10 flex flex-col md:flex-row justify-between gap-4 text-xs">
-      <p>© <span id="year"></span> TRAINABULL · University of South Florida</p>
-      <p>Built openly on <a href="https://github.com/taiyohanna/trainabull" class="underline hover:text-usfgold-warm transition">GitHub</a></p>
-    </div>
-  </div>
-</footer>
+</main>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  document.getElementById('mobileToggle').addEventListener('click', () => {
-    document.getElementById('mobileMenu').classList.toggle('hidden');
-  });
+  document.getElementById('mobileToggle').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });
 </script>
 </body>
 </html>

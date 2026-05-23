@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Projects — TRAINABULL</title>
-<meta name="description" content="Active clinical AI research projects at the TRAINABULL lab — USF's collaborative for clinical informatics and artificial intelligence." />
+<title>Projects & Publications - TRAIN-A-BULL</title>
+<meta name="description" content="Active clinical AI research projects and publications from the TRAIN-A-BULL community at USF." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -24,15 +24,14 @@
 <header class="fixed top-0 inset-x-0 z-50 bg-paper/85 backdrop-blur-md border-b border-ink/5">
   <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
     <a href="index.html" class="flex items-center gap-2 font-display font-bold text-xl tracking-tight">
-      <span class="text-usfgreen">TR</span><span class="text-usfgold-warm text-2xl">AI</span><span class="text-usfgreen">NABULL</span>
+      <span class="text-usfgreen">TR</span><span class="text-usfgold-warm text-2xl">AI</span><span class="text-usfgreen">N-A-BULL</span>
     </a>
     <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-soft">
       <a href="about.html" class="hover:text-usfgreen transition">The Lab</a>
       <a href="projects.html" class="text-usfgreen font-semibold">Projects</a>
-      <a href="publications.html" class="hover:text-usfgreen transition">Publications</a>
       <a href="journal-club.html" class="hover:text-usfgreen transition">Journal Club</a>
       <a href="learn.html" class="hover:text-usfgreen transition">Learn</a>
-      <a href="get-involved.html" class="inline-flex items-center gap-2 bg-usfgreen text-paper px-4 py-2 rounded-full hover:bg-usfgreen-deep transition">Get Involved →</a>
+      <a href="get-involved.html" class="inline-flex items-center gap-2 bg-usfgreen text-paper px-4 py-2 rounded-full hover:bg-usfgreen-deep transition">Get Involved</a>
     </nav>
     <button id="mobileToggle" class="md:hidden p-2" aria-label="Menu">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -42,10 +41,9 @@
     <nav class="px-6 py-4 flex flex-col gap-3 text-sm font-medium">
       <a href="about.html" class="py-2">The Lab</a>
       <a href="projects.html" class="py-2 text-usfgreen font-semibold">Projects</a>
-      <a href="publications.html" class="py-2">Publications</a>
       <a href="journal-club.html" class="py-2">Journal Club</a>
       <a href="learn.html" class="py-2">Learn</a>
-      <a href="get-involved.html" class="py-2 text-usfgreen font-semibold">Get Involved →</a>
+      <a href="get-involved.html" class="py-2 text-usfgreen font-semibold">Get Involved</a>
     </nav>
   </div>
 </header>
@@ -53,30 +51,32 @@
 <!-- HERO -->
 <section class="pt-32 pb-16 lg:pt-44 lg:pb-20 border-b border-ink/5">
   <div class="max-w-5xl mx-auto px-6 lg:px-10">
-    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-4">Projects</p>
-    <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight text-ink mb-6">What we're working on.</h1>
-    <p class="text-xl md:text-2xl text-ink-soft max-w-3xl leading-relaxed">A living portfolio of active research, pilots, and collaborations across clinical AI and informatics at USF.</p>
+    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-4">Projects & Publications</p>
+    <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight text-ink mb-6">What we're working on, and what we've shipped.</h1>
+    <p class="text-xl md:text-2xl text-ink-soft max-w-3xl leading-relaxed">A living portfolio of active research and pilots, plus the papers, posters, and talks that come out of our work.</p>
+
+    <div class="flex flex-wrap gap-3 mt-8 text-sm">
+      <a href="#active" class="px-4 py-2 rounded-full bg-paper border border-ink/15 hover:border-usfgreen font-medium transition">Active projects</a>
+      <a href="#publications" class="px-4 py-2 rounded-full bg-paper border border-ink/15 hover:border-usfgreen font-medium transition">Publications</a>
+      <a href="#posters" class="px-4 py-2 rounded-full bg-paper border border-ink/15 hover:border-usfgreen font-medium transition">Posters & talks</a>
+      <a href="#media" class="px-4 py-2 rounded-full bg-paper border border-ink/15 hover:border-usfgreen font-medium transition">Media</a>
+    </div>
   </div>
 </section>
 
-<!-- FILTER -->
-<section class="py-10 border-b border-ink/5 bg-paper-warm/30">
-  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-wrap gap-3">
-    <button class="px-4 py-2 rounded-full bg-usfgreen text-paper text-sm font-medium">All</button>
-    <button class="px-4 py-2 rounded-full bg-paper border border-ink/15 text-sm font-medium hover:border-usfgreen transition">Evaluation</button>
-    <button class="px-4 py-2 rounded-full bg-paper border border-ink/15 text-sm font-medium hover:border-usfgreen transition">Workflow</button>
-    <button class="px-4 py-2 rounded-full bg-paper border border-ink/15 text-sm font-medium hover:border-usfgreen transition">Education</button>
-    <button class="px-4 py-2 rounded-full bg-paper border border-ink/15 text-sm font-medium hover:border-usfgreen transition">Informatics</button>
-    <button class="px-4 py-2 rounded-full bg-paper border border-ink/15 text-sm font-medium hover:border-usfgreen transition">Ethics & Safety</button>
-  </div>
-</section>
-
-<!-- PROJECTS GRID -->
-<section class="py-20 lg:py-28">
+<!-- ACTIVE PROJECTS -->
+<section id="active" class="py-20 lg:py-28 scroll-mt-20">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="flex items-end justify-between mb-10 flex-wrap gap-4">
+      <div>
+        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-3">01</p>
+        <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-ink leading-tight">Active Projects</h2>
+      </div>
+      <a href="get-involved.html#idea" class="text-sm font-semibold text-usfgreen hover:underline">Submit a project idea &rarr;</a>
+    </div>
+
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <!-- Placeholder project card -->
       <article class="group bg-paper rounded-2xl border border-ink/10 overflow-hidden hover:border-usfgreen hover:shadow-xl hover:shadow-usfgreen/5 transition">
         <div class="h-40 bg-gradient-to-br from-usfgreen to-usfgreen-deep relative overflow-hidden">
           <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, #CFC493 1px, transparent 0); background-size: 16px 16px;"></div>
@@ -90,7 +90,7 @@
           <p class="text-ink-soft text-sm leading-relaxed mb-5">Designing and piloting a longitudinal AI-in-medicine curriculum across all PGY years of the USF/TGH Family Medicine Residency.</p>
           <div class="flex items-center justify-between text-xs text-ink-soft">
             <span>PI: K. Hanna</span>
-            <span class="text-usfgreen font-semibold">Learn more →</span>
+            <span class="text-usfgreen font-semibold">Learn more &rarr;</span>
           </div>
         </div>
       </article>
@@ -105,10 +105,10 @@
         <div class="p-7">
           <p class="text-xs font-semibold uppercase tracking-wider text-usfgreen mb-3">Evaluation</p>
           <h3 class="font-display text-xl font-semibold text-ink mb-3 leading-snug">Ambient Scribe Real-World Performance</h3>
-          <p class="text-ink-soft text-sm leading-relaxed mb-5">Evaluating ambient AI scribes in primary care — note quality, time savings, clinician satisfaction, and patient outcomes.</p>
+          <p class="text-ink-soft text-sm leading-relaxed mb-5">Evaluating ambient AI scribes in primary care: note quality, time savings, clinician satisfaction, and patient outcomes.</p>
           <div class="flex items-center justify-between text-xs text-ink-soft">
             <span>Status: Recruiting collaborators</span>
-            <span class="text-usfgreen font-semibold">Learn more →</span>
+            <span class="text-usfgreen font-semibold">Learn more &rarr;</span>
           </div>
         </div>
       </article>
@@ -120,15 +120,63 @@
         <div class="p-7">
           <p class="text-xs font-semibold uppercase tracking-wider text-ink-soft mb-3">Your project?</p>
           <h3 class="font-display text-xl font-semibold text-ink mb-3 leading-snug">Have a research idea?</h3>
-          <p class="text-ink-soft text-sm leading-relaxed mb-5">If you've got a project at the intersection of clinical care and AI, this is the place to start — or to find collaborators for what you're already doing.</p>
-          <a href="get-involved.html#idea" class="inline-flex items-center gap-1 text-sm font-semibold text-usfgreen">Submit an idea →</a>
+          <p class="text-ink-soft text-sm leading-relaxed mb-5">If you've got a project at the intersection of clinical care and AI, this is the place to start, or to find collaborators for what you're already doing.</p>
+          <a href="get-involved.html#idea" class="inline-flex items-center gap-1 text-sm font-semibold text-usfgreen">Submit a PICO &rarr;</a>
         </div>
       </article>
 
     </div>
 
-    <div class="mt-16 text-center">
-      <p class="text-ink-soft italic">More projects coming soon as collaborators come on board.</p>
+    <p class="mt-12 text-sm text-ink-soft italic">More projects will appear here as collaborators come on board.</p>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="py-20 lg:py-28 bg-paper-warm/40 border-y border-ink/5 scroll-mt-20">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10">
+    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-3">02</p>
+    <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-ink leading-tight mb-12">Peer-Reviewed Papers</h2>
+
+    <div class="bg-paper rounded-2xl p-8 border border-dashed border-ink/15 text-center">
+      <p class="text-ink-soft italic">Papers will appear here as they're published. Have one to add? <a href="mailto:khanna@usf.edu" class="text-usfgreen font-semibold hover:underline not-italic">Email Karim</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- POSTERS & TALKS -->
+<section id="posters" class="py-20 lg:py-28 scroll-mt-20">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10">
+    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-3">03</p>
+    <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-ink leading-tight mb-2">Posters, Talks & Presentations</h2>
+    <p class="text-ink-soft mb-10">National and regional conference work, invited talks, grand rounds.</p>
+
+    <div class="space-y-3">
+      <div class="bg-paper rounded-xl p-6 border border-ink/10 flex items-start gap-4">
+        <div class="w-12 h-12 rounded-lg bg-usfgreen/10 text-usfgreen flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        </div>
+        <div class="flex-1 min-w-0">
+          <p class="text-xs font-semibold uppercase tracking-wider text-usfgreen mb-1">STFM 2026</p>
+          <h3 class="font-display text-lg font-semibold text-ink mb-1">Leaders Eat Last: Resident Leadership in the Age of AI</h3>
+          <p class="text-sm text-ink-soft">K. Hanna · Society of Teachers of Family Medicine, 2026</p>
+        </div>
+      </div>
+      <div class="bg-paper-warm/40 rounded-xl p-6 border border-dashed border-ink/15 text-center text-sm text-ink-soft italic">More presentations will be added here.</div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIA -->
+<section id="media" class="py-20 lg:py-28 bg-paper-warm/40 border-y border-ink/5 scroll-mt-20">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10">
+    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-3">04</p>
+    <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-ink leading-tight mb-2">In the Media</h2>
+    <p class="text-ink-soft mb-10">Newsletters, press, blog features, podcasts.</p>
+
+    <div class="bg-paper rounded-xl p-6 border border-ink/10">
+      <p class="text-xs font-semibold uppercase tracking-wider text-usfgreen mb-1">Substack</p>
+      <h3 class="font-display text-lg font-semibold text-ink mb-1"><a href="https://karimhannamd.substack.com" class="hover:text-usfgreen transition" target="_blank" rel="noopener">AI + MedEd Newsletter</a></h3>
+      <p class="text-sm text-ink-soft">Karim Hanna's running essays on AI in medical education.</p>
     </div>
   </div>
 </section>
@@ -137,25 +185,23 @@
 <section class="py-24 bg-usfgreen text-paper text-center">
   <div class="max-w-3xl mx-auto px-6 lg:px-10">
     <h2 class="font-display text-3xl md:text-4xl font-semibold mb-4">Want to collaborate?</h2>
-    <p class="text-paper/85 mb-8 text-lg">Whether you have an idea, a question, or a half-finished pilot — we'd rather build it together than separately.</p>
-    <a href="get-involved.html" class="inline-flex items-center gap-2 bg-paper text-usfgreen px-7 py-4 rounded-full font-semibold hover:bg-paper-warm transition">Get involved →</a>
+    <p class="text-paper/85 mb-8 text-lg">Whether you have an idea, a question, or a half-finished pilot - we'd rather build it together than separately.</p>
+    <a href="get-involved.html" class="inline-flex items-center gap-2 bg-paper text-usfgreen px-7 py-4 rounded-full font-semibold hover:bg-paper-warm transition">Get involved &rarr;</a>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="bg-ink text-paper/70 py-16">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
     <div class="grid md:grid-cols-4 gap-10 mb-12">
       <div class="md:col-span-2">
-        <div class="font-display font-bold text-2xl mb-4"><span class="text-paper">TR</span><span class="text-usfgold-warm text-3xl">AI</span><span class="text-paper">NABULL</span></div>
-        <p class="text-sm leading-relaxed max-w-md">A USF community advancing clinical informatics and artificial intelligence — together. Based in Tampa, FL.</p>
+        <div class="font-display font-bold text-2xl mb-4"><span class="text-paper">TR</span><span class="text-usfgold-warm text-3xl">AI</span><span class="text-paper">N-A-BULL</span></div>
+        <p class="text-sm leading-relaxed max-w-md">A USF community advancing clinical informatics and artificial intelligence together. Based in Tampa, FL.</p>
       </div>
       <div>
         <p class="text-xs font-semibold uppercase tracking-wider text-paper mb-4">Explore</p>
         <ul class="space-y-2 text-sm">
           <li><a href="about.html" class="hover:text-usfgold-warm transition">The Lab</a></li>
           <li><a href="projects.html" class="hover:text-usfgold-warm transition">Projects</a></li>
-          <li><a href="publications.html" class="hover:text-usfgold-warm transition">Publications</a></li>
           <li><a href="journal-club.html" class="hover:text-usfgold-warm transition">Journal Club</a></li>
           <li><a href="learn.html" class="hover:text-usfgold-warm transition">Learn</a></li>
         </ul>
@@ -171,7 +217,7 @@
       </div>
     </div>
     <div class="pt-8 border-t border-paper/10 flex flex-col md:flex-row justify-between gap-4 text-xs">
-      <p>© <span id="year"></span> TRAINABULL · University of South Florida</p>
+      <p>(c) <span id="year"></span> TRAIN-A-BULL · A USF community · Tampa, FL</p>
       <p>Built openly on <a href="https://github.com/taiyohanna/trainabull" class="underline hover:text-usfgold-warm transition">GitHub</a></p>
     </div>
   </div>
