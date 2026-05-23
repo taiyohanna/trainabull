@@ -1,0 +1,17 @@
+/* TRAINABULL — site-wide overrides + small polish on top of Tailwind */
+
+html { scroll-behavior: smooth; }
+
+::selection { background: #006747; color: #FAFAF7; }
+
+/* Subtle in-view fade for sections */
+@media (prefers-reduced-motion: no-preference) {
+  section { animation: fadeUp 0.6s ease-out both; }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* Anchor offset under fixed nav */
+:target { scroll-margin-top: 5rem; }

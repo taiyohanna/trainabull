@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Lab — TRAINABULL</title>
+<meta name="description" content="TRAINABULL is a USF community advancing clinical informatics and artificial intelligence in healthcare." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: { usfgreen: { DEFAULT: '#006747', deep: '#004D34', dark: '#00321F' }, usfgold: { DEFAULT: '#CFC493', warm: '#E8A317', bright: '#FDB927' }, ink: { DEFAULT: '#0F1714', soft: '#3B4A44' }, paper: { DEFAULT: '#FAFAF7', warm: '#F4F1E8' } },
+    fontFamily: { display: ['Fraunces', 'Georgia', 'serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }
+  }}};
+</script>
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+</head>
+
+<body class="bg-paper text-ink font-sans antialiased">
+
+<header class="fixed top-0 inset-x-0 z-50 bg-paper/85 backdrop-blur-md border-b border-ink/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2 font-display font-bold text-xl tracking-tight">
+      <span class="text-usfgreen">TR</span><span class="text-usfgold-warm text-2xl">AI</span><span class="text-usfgreen">NABULL</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-soft">
+      <a href="about.html" class="text-usfgreen font-semibold">The Lab</a>
+      <a href="projects.html" class="hover:text-usfgreen transition">Projects</a>
+      <a href="publications.html" class="hover:text-usfgreen transition">Publications</a>
+      <a href="journal-club.html" class="hover:text-usfgreen transition">Journal Club</a>
+      <a href="learn.html" class="hover:text-usfgreen transition">Learn</a>
+      <a href="get-involved.html" class="inline-flex items-center gap-2 bg-usfgreen text-paper px-4 py-2 rounded-full hover:bg-usfgreen-deep transition">Get Involved →</a>
+    </nav>
+    <button id="mobileToggle" class="md:hidden p-2" aria-label="Menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden border-t border-ink/5 bg-paper">
+    <nav class="px-6 py-4 flex flex-col gap-3 text-sm font-medium">
+      <a href="about.html" class="py-2 text-usfgreen font-semibold">The Lab</a>
+      <a href="projects.html" class="py-2">Projects</a>
+      <a href="publications.html" class="py-2">Publications</a>
+      <a href="journal-club.html" class="py-2">Journal Club</a>
+      <a href="learn.html" class="py-2">Learn</a>
+      <a href="get-involved.html" class="py-2 text-usfgreen font-semibold">Get Involved →</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="pt-32 pb-16 lg:pt-44 lg:pb-20 border-b border-ink/5">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10">
+    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-4">The Lab</p>
+    <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight text-ink mb-6">A community for clinical AI at USF.</h1>
+    <p class="text-xl md:text-2xl text-ink-soft max-w-3xl leading-relaxed">
+      TRAINABULL is a cross-disciplinary collaborative — physicians, nurses, students, engineers, and information scientists — building the future of AI-augmented healthcare without reinventing the wheel.
+    </p>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="py-20 lg:py-28">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10 grid md:grid-cols-3 gap-12">
+    <div>
+      <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-2">Mission</p>
+    </div>
+    <div class="md:col-span-2 space-y-6 text-lg text-ink-soft leading-relaxed">
+      <p>Healthcare and artificial intelligence are converging fast — and most institutions are duplicating effort, learning the same lessons separately, and missing chances to translate research into care.</p>
+      <p class="text-ink"><strong>TRAINABULL bridges those gaps at USF.</strong> We bring together clinicians, scientists, technologists, and learners in one place — to share what works, validate what's promising, and build what's missing.</p>
+      <p>We are the connective tissue between disciplines: medicine, nursing, computer science, the College of Engineering, the School of Information, and Health IT. We exist so that any USF student, trainee, or faculty member curious about clinical AI has somewhere to land — and somewhere to contribute.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOCUS AREAS -->
+<section class="py-20 lg:py-28 bg-paper-warm/40 border-y border-ink/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-3xl mb-14">
+      <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-4">Focus Areas</p>
+      <h2 class="font-display text-4xl md:text-5xl font-semibold text-ink leading-tight">Where we work.</h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-paper p-7 rounded-2xl border border-ink/10">
+        <h3 class="font-display text-xl font-semibold text-ink mb-3">Clinical AI Evaluation</h3>
+        <p class="text-ink-soft text-sm leading-relaxed">Rigorously assessing AI tools before they touch patient care — accuracy, bias, equity, and real-world performance.</p>
+      </div>
+      <div class="bg-paper p-7 rounded-2xl border border-ink/10">
+        <h3 class="font-display text-xl font-semibold text-ink mb-3">Workflow Integration</h3>
+        <p class="text-ink-soft text-sm leading-relaxed">How AI actually fits into the clinic — EHR integration, cognitive load, documentation, ambient scribes, and triage.</p>
+      </div>
+      <div class="bg-paper p-7 rounded-2xl border border-ink/10">
+        <h3 class="font-display text-xl font-semibold text-ink mb-3">AI in Medical Education</h3>
+        <p class="text-ink-soft text-sm leading-relaxed">Preparing students and trainees to practice — and lead — in an AI-augmented healthcare system.</p>
+      </div>
+      <div class="bg-paper p-7 rounded-2xl border border-ink/10">
+        <h3 class="font-display text-xl font-semibold text-ink mb-3">Health Informatics</h3>
+        <p class="text-ink-soft text-sm leading-relaxed">Data infrastructure, interoperability, and the unglamorous plumbing that makes safe AI possible.</p>
+      </div>
+      <div class="bg-paper p-7 rounded-2xl border border-ink/10">
+        <h3 class="font-display text-xl font-semibold text-ink mb-3">Patient Safety & Ethics</h3>
+        <p class="text-ink-soft text-sm leading-relaxed">Bias, transparency, informed consent, and the new safety considerations unique to clinical AI.</p>
+      </div>
+      <div class="bg-paper p-7 rounded-2xl border border-ink/10">
+        <h3 class="font-display text-xl font-semibold text-ink mb-3">Industry Translation</h3>
+        <p class="text-ink-soft text-sm leading-relaxed">Partnering with companies and startups to test, validate, and improve their products in real clinical environments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section class="py-20 lg:py-28">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10">
+    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-4">Leadership</p>
+    <h2 class="font-display text-4xl md:text-5xl font-semibold text-ink leading-tight mb-12">Who's behind this.</h2>
+
+    <div class="bg-paper-warm/40 rounded-3xl p-8 md:p-12 border border-ink/5">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div class="md:col-span-1">
+          <div class="aspect-square rounded-2xl bg-usfgreen/10 flex items-center justify-center">
+            <span class="font-display text-6xl font-bold text-usfgreen">KH</span>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h3 class="font-display text-2xl md:text-3xl font-semibold text-ink mb-1">Karim Hanna, MD, FAAFP, FAMIA</h3>
+          <p class="text-usfgreen font-medium mb-4">Founder & Director</p>
+          <p class="text-ink-soft leading-relaxed mb-4">
+            Family physician, clinical informaticist, and Associate Professor at the USF Morsani College of Medicine. Founding Program Director of the USF/TGH Family Medicine Residency. Board-certified in family medicine and clinical informatics, with a focus on translating AI into primary care education and practice.
+          </p>
+          <p class="text-sm text-ink-soft">
+            <a href="mailto:khanna@usf.edu" class="text-usfgreen hover:underline">khanna@usf.edu</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <p class="mt-10 text-sm text-ink-soft italic">Members and contributors will be listed here as the lab grows. <a href="get-involved.html#join" class="text-usfgreen font-semibold hover:underline not-italic">Want to be one of them?</a></p>
+  </div>
+</section>
+
+<!-- AFFILIATIONS -->
+<section class="py-20 bg-ink text-paper">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10 text-center">
+    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgold-warm mb-4">USF Affiliations</p>
+    <h2 class="font-display text-3xl md:text-4xl font-semibold leading-tight mb-10">Anchored across the University of South Florida.</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm text-paper/80">
+      <div class="bg-paper/5 rounded-xl px-5 py-4 border border-paper/10">Morsani College of Medicine</div>
+      <div class="bg-paper/5 rounded-xl px-5 py-4 border border-paper/10">College of Nursing</div>
+      <div class="bg-paper/5 rounded-xl px-5 py-4 border border-paper/10">College of Engineering</div>
+      <div class="bg-paper/5 rounded-xl px-5 py-4 border border-paper/10">School of Information</div>
+      <div class="bg-paper/5 rounded-xl px-5 py-4 border border-paper/10">USF Health IT</div>
+      <div class="bg-paper/5 rounded-xl px-5 py-4 border border-paper/10">TGH / USF Health</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-paper/70 py-16 border-t border-paper/10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid md:grid-cols-4 gap-10 mb-12">
+      <div class="md:col-span-2">
+        <div class="font-display font-bold text-2xl mb-4"><span class="text-paper">TR</span><span class="text-usfgold-warm text-3xl">AI</span><span class="text-paper">NABULL</span></div>
+        <p class="text-sm leading-relaxed max-w-md">A USF community advancing clinical informatics and artificial intelligence — together. Based in Tampa, FL.</p>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wider text-paper mb-4">Explore</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="about.html" class="hover:text-usfgold-warm transition">The Lab</a></li>
+          <li><a href="projects.html" class="hover:text-usfgold-warm transition">Projects</a></li>
+          <li><a href="publications.html" class="hover:text-usfgold-warm transition">Publications</a></li>
+          <li><a href="journal-club.html" class="hover:text-usfgold-warm transition">Journal Club</a></li>
+          <li><a href="learn.html" class="hover:text-usfgold-warm transition">Learn</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wider text-paper mb-4">Get Involved</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="get-involved.html#join" class="hover:text-usfgold-warm transition">Join the lab</a></li>
+          <li><a href="get-involved.html#idea" class="hover:text-usfgold-warm transition">Submit an idea</a></li>
+          <li><a href="get-involved.html#partners" class="hover:text-usfgold-warm transition">Industry partners</a></li>
+          <li><a href="mailto:khanna@usf.edu" class="hover:text-usfgold-warm transition">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-paper/10 flex flex-col md:flex-row justify-between gap-4 text-xs">
+      <p>© <span id="year"></span> TRAINABULL · University of South Florida</p>
+      <p>Built openly on <a href="https://github.com/taiyohanna/trainabull" class="underline hover:text-usfgold-warm transition">GitHub</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('mobileToggle').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });
+</script>
+</body>
+</html>
