@@ -137,15 +137,11 @@
         <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-3">02</p>
         <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-ink leading-tight">Publications & Presentations</h2>
       </div>
-      <!--
-        REPLACE this href with your Google Form's public share link
-        (Form should be created at forms.google.com while logged into taiyohanna@gmail.com)
-      -->
-      <a href="https://forms.google.com" target="_blank" rel="noopener"
+      <button id="submitPubEmail"
          class="inline-flex items-center gap-2 bg-usfgreen text-paper px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-usfgreen-deep transition">
-        Submit a publication
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-      </a>
+        Submit by email
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+      </button>
     </div>
     <p class="text-ink-soft mb-10">Peer-reviewed papers, posters, conference talks, and invited presentations - newest first.</p>
 
@@ -302,7 +298,7 @@
 
     </div>
 
-    <p class="mt-10 text-xs text-ink-soft/70 italic">Citations follow AMA style. New submissions are added via Google Form (link above).</p>
+    <p class="mt-10 text-xs text-ink-soft/70 italic">Citations follow AMA style. New entries are added by emailing Karim with the citation details (use the button above for a pre-filled template).</p>
   </div>
 </section>
 
@@ -352,6 +348,51 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
   document.getElementById('mobileToggle').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });
+
+  // Submit publication button: pre-filled email template
+  const submitPubBtn = document.getElementById('submitPubEmail');
+  if (submitPubBtn) {
+    submitPubBtn.addEventListener('click', () => {
+      const subject = "TRAIN-A-BULL - New publication or presentation";
+      const body = `Hi Karim,
+
+Adding a publication / presentation to the TRAIN-A-BULL list.
+
+AUTHORS (citation order, e.g. "Hanna K, Smith J"):
+
+
+TITLE:
+
+
+VENUE (journal name or conference):
+
+
+TYPE:
+[ ] Peer-reviewed paper
+[ ] Letter / Editorial
+[ ] Poster
+[ ] Oral presentation
+[ ] Other:
+
+DATE (e.g. "2026 May"):
+
+VOLUME, ISSUE, PAGES (for journal articles):
+
+DOI / URL (if available):
+
+AWARD OR RECOGNITION (optional):
+
+SUBMITTER
+Name:
+USF affiliation:
+Best email:
+
+Thanks,
+`;
+      const url = `mailto:khanna@usf.edu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = url;
+    });
+  }
 </script>
 </body>
 </html>
