@@ -24,7 +24,7 @@
 <header class="fixed top-0 inset-x-0 z-50 bg-paper/85 backdrop-blur-md border-b border-ink/5">
   <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
     <a href="index.html" class="font-display font-bold text-xl tracking-tight whitespace-nowrap">
-      <span class="text-usfgreen">TR</span><span class="text-usfgold-warm text-2xl">AI</span><span class="text-usfgreen">N-A-BULL</span>
+      <span class="text-usfgreen">USF </span><span class="text-usfgold-warm">AI/CI</span><span class="text-usfgreen"> Collaborative</span>
     </a>
     <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-soft">
       <a href="about.html" class="hover:text-usfgreen transition">The Lab</a>
@@ -51,13 +51,14 @@
 <section class="pt-32 pb-16 lg:pt-44 lg:pb-20 border-b border-ink/5">
   <div class="max-w-5xl mx-auto px-6 lg:px-10">
     <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-4">Get Involved</p>
-    <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight text-ink mb-6">Three ways in.</h1>
+    <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight text-ink mb-6">Four ways in.</h1>
     <p class="text-xl md:text-2xl text-ink-soft max-w-3xl leading-relaxed">Pick the path that fits. Each opens a pre-structured email so your submission lands with everything we need to act on it.</p>
 
-    <div class="grid sm:grid-cols-3 gap-3 mt-10">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-10">
       <a href="#join" class="bg-paper border border-ink/15 hover:border-usfgreen px-5 py-4 rounded-xl text-sm font-semibold text-ink hover:text-usfgreen transition flex items-center justify-between">Join the lab <span>&rarr;</span></a>
       <a href="#idea" class="bg-paper border border-ink/15 hover:border-usfgreen px-5 py-4 rounded-xl text-sm font-semibold text-ink hover:text-usfgreen transition flex items-center justify-between">Submit a project idea <span>&rarr;</span></a>
       <a href="#partners" class="bg-paper border border-ink/15 hover:border-usfgreen px-5 py-4 rounded-xl text-sm font-semibold text-ink hover:text-usfgreen transition flex items-center justify-between">Industry partners <span>&rarr;</span></a>
+      <a href="#subscribe" class="bg-paper border border-ink/15 hover:border-usfgreen px-5 py-4 rounded-xl text-sm font-semibold text-ink hover:text-usfgreen transition flex items-center justify-between">Get announcements <span>&rarr;</span></a>
     </div>
   </div>
 </section>
@@ -71,7 +72,7 @@
         <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink leading-tight">Join the lab.</h2>
       </div>
       <div class="md:col-span-2">
-        <p class="text-lg text-ink-soft leading-relaxed mb-6">For anyone at USF (student, resident, faculty, staff) who wants to be part of the TRAIN-A-BULL community. You'll get journal club invites, project announcements, and a seat at the table.</p>
+        <p class="text-lg text-ink-soft leading-relaxed mb-6">For anyone at USF (student, resident, faculty, staff) who wants to be part of the TR<span class="text-usfgold-warm">AI</span>N-A-BULL community. You'll get journal club invites, project announcements, and a seat at the table.</p>
 
         <div class="bg-paper-warm/40 rounded-2xl p-6 border border-ink/10 mb-6">
           <p class="text-xs font-semibold uppercase tracking-wider text-usfgreen mb-3">Your email should include</p>
@@ -172,6 +173,42 @@
   </div>
 </section>
 
+<!-- SUBSCRIBE -->
+<section id="subscribe" class="py-20 lg:py-28 bg-paper-warm/40 border-y border-ink/5 scroll-mt-20">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10">
+    <div class="grid md:grid-cols-3 gap-10">
+      <div>
+        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-3">04 · Stay in the loop</p>
+        <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink leading-tight">Get announcements.</h2>
+      </div>
+      <div class="md:col-span-2">
+        <p class="text-lg text-ink-soft leading-relaxed mb-6">Not ready to join, propose a project, or partner - but want to know what we're up to? Drop your email and we'll add you to the announcement list (journal club papers, new projects, events).</p>
+
+        <form id="subscribeForm" class="bg-paper rounded-2xl p-6 border border-ink/10 mb-3">
+          <label for="subscribeEmail" class="block text-xs font-semibold uppercase tracking-wider text-usfgreen mb-3">Your email</label>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input
+              id="subscribeEmail"
+              type="email"
+              required
+              placeholder="you@example.edu"
+              class="flex-1 px-4 py-3 rounded-full border border-ink/15 bg-paper-warm/30 focus:outline-none focus:border-usfgreen focus:ring-2 focus:ring-usfgreen/20 text-sm"
+            />
+            <button
+              type="submit"
+              class="inline-flex items-center justify-center gap-2 bg-usfgreen text-paper px-6 py-3 rounded-full font-semibold hover:bg-usfgreen-deep transition text-sm shadow-lg shadow-usfgreen/20"
+            >
+              Subscribe
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </button>
+          </div>
+        </form>
+        <p class="text-xs text-ink-soft/70">Submitting opens your email client with a pre-filled subscribe request to khanna@usf.edu. No spam, no third parties - just announcements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- DIRECT CONTACT -->
 <section class="py-24 bg-usfgreen text-paper text-center">
   <div class="max-w-3xl mx-auto px-6 lg:px-10">
@@ -203,12 +240,13 @@
           <li><a href="#join" class="hover:text-usfgold-warm transition">Join the lab</a></li>
           <li><a href="#idea" class="hover:text-usfgold-warm transition">Submit an idea</a></li>
           <li><a href="#partners" class="hover:text-usfgold-warm transition">Industry partners</a></li>
+          <li><a href="#subscribe" class="hover:text-usfgold-warm transition">Get announcements</a></li>
           <li><a href="mailto:khanna@usf.edu" class="hover:text-usfgold-warm transition">Contact</a></li>
         </ul>
       </div>
     </div>
     <div class="pt-8 border-t border-paper/10 flex flex-col md:flex-row justify-between gap-4 text-xs">
-      <p>(c) <span id="year"></span> TRAIN-A-BULL · A USF community · Tampa, FL</p>
+      <p>(c) <span id="year"></span> TR<span class="text-usfgold-warm">AI</span>N-A-BULL · A USF community · Tampa, FL</p>
       <p>Built openly on <a href="https://github.com/taiyohanna/trainabull" class="underline hover:text-usfgold-warm transition">GitHub</a></p>
     </div>
   </div>
@@ -348,6 +386,20 @@ Thanks,
       window.location.href = url;
     });
   });
+
+  // Subscribe form: opens user's email client with their address in the body
+  const subForm = document.getElementById('subscribeForm');
+  if (subForm) {
+    subForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('subscribeEmail').value.trim();
+      if (!email) return;
+      const subject = "TRAIN-A-BULL - Subscribe me to announcements";
+      const body = `Hi Karim,\n\nPlease add me to the TRAIN-A-BULL announcements list.\n\nEmail: ${email}\nName (optional):\nUSF affiliation (optional):\n\nThanks,`;
+      const url = `mailto:khanna@usf.edu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = url;
+    });
+  }
 </script>
 </body>
 </html>
