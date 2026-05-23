@@ -75,21 +75,20 @@
         <p class="text-lg text-ink-soft leading-relaxed mb-6">For anyone at USF (student, resident, faculty, staff) who wants to be part of the TR<span class="text-usfgold-warm">AI</span>N-A-BULL community. You'll get journal club invites, project announcements, and a seat at the table.</p>
 
         <div class="bg-paper-warm/40 rounded-2xl p-6 border border-ink/10 mb-6">
-          <p class="text-xs font-semibold uppercase tracking-wider text-usfgreen mb-3">Your email should include</p>
-          <ul class="space-y-2 text-sm text-ink-soft">
-            <li><strong class="text-ink">Name + USF affiliation</strong> (school / department / program)</li>
-            <li><strong class="text-ink">Role</strong> (student, resident/fellow, faculty, staff)</li>
-            <li><strong class="text-ink">What brings you here</strong> (2-3 sentences on your background and interest in clinical AI)</li>
-            <li><strong class="text-ink">What you'd like to be part of</strong> (journal club, projects, curriculum, industry work, open to anything)</li>
-            <li><strong class="text-ink">What you bring</strong> (optional - skills, prior work, ideas)</li>
+          <p class="text-xs font-semibold uppercase tracking-wider text-usfgreen mb-3">The form will ask for</p>
+          <ul class="space-y-1.5 text-sm text-ink-soft">
+            <li><strong class="text-ink">Email address</strong> (required)</li>
+            <li><strong class="text-ink">Name</strong> (required)</li>
+            <li><strong class="text-ink">USF affiliation</strong> (required - school / department / program)</li>
           </ul>
         </div>
 
-        <button data-template="join" class="open-email inline-flex items-center gap-2 bg-usfgreen text-paper px-7 py-4 rounded-full font-semibold hover:bg-usfgreen-deep transition shadow-lg shadow-usfgreen/20 text-sm">
-          Open pre-filled email
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-        </button>
-        <p class="text-xs text-ink-soft/70 mt-3">Opens your default email client with a structured template addressed to khanna@usf.edu.</p>
+        <a href="https://forms.gle/w4dyBEY8TXfP5Ae48" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-usfgreen text-paper px-7 py-4 rounded-full font-semibold hover:bg-usfgreen-deep transition shadow-lg shadow-usfgreen/20 text-sm">
+          Open signup form
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+        <p class="text-xs text-ink-soft/70 mt-3">Opens a Google Form. Responses go directly to taiyohanna@gmail.com.</p>
       </div>
     </div>
   </div>
@@ -242,36 +241,6 @@
   document.getElementById('mobileToggle').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });
 
   const templates = {
-    join: {
-      subject: "TRAIN-A-BULL - I'd like to join the lab",
-      body: `Hi Karim,
-
-I'd like to join the TRAIN-A-BULL community.
-
-ABOUT ME
-Name:
-USF affiliation (school / department / program):
-Role: [ ] Student   [ ] Resident / Fellow   [ ] Faculty   [ ] Staff   [ ] Other
-Best email to reach me:
-
-WHAT BRINGS ME HERE
-(2-3 sentences on your background and what draws you to clinical AI)
-
-
-WHAT I'D LIKE TO BE PART OF
-[ ] Monthly journal club
-[ ] An active research project
-[ ] Curriculum / educational efforts
-[ ] Industry partnership work
-[ ] Open to whatever's a fit
-
-WHAT I BRING (optional)
-(skills, prior work, ideas)
-
-
-Thanks,
-`
-    },
     idea: {
       subject: "TRAIN-A-BULL - Project Idea (PICO)",
       body: `Hi Karim,
