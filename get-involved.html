@@ -72,32 +72,71 @@
         <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink leading-tight">Join the lab.</h2>
       </div>
       <div class="md:col-span-2">
-        <p class="text-lg text-ink-soft leading-relaxed mb-6">For anyone at USF (student, resident, faculty, staff) who wants to actively participate in TR<span class="text-usfgold-warm">AI</span>N-A-BULL - journal club, projects, curriculum work, or industry collaborations. The form below has additional questions so we can match you to the right work.</p>
+        <p class="text-lg text-ink-soft leading-relaxed mb-6">For anyone at USF (student, resident, faculty, staff) who wants to actively participate in TR<span class="text-usfgold-warm">AI</span>N-A-BULL - journal club, projects, curriculum work, or industry collaborations.</p>
+        
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { window.location.href='#join'; alert('Thank you! Your submission has been received.'); }"></iframe>
 
-        <div class="bg-paper-warm/40 rounded-2xl p-6 border border-ink/10 mb-6">
-          <p class="text-xs font-semibold uppercase tracking-wider text-usfgreen mb-3">The form asks for</p>
-          <ul class="space-y-1.5 text-sm text-ink-soft mb-4">
-            <li><strong class="text-ink">Email · Name · USF affiliation</strong> (required)</li>
-          </ul>
-          <p class="text-xs font-semibold uppercase tracking-wider text-usfgreen mb-3">If you choose to participate, also</p>
-          <ul class="space-y-1.5 text-sm text-ink-soft">
-            <li><strong class="text-ink">Role</strong> (student / resident / fellow / faculty / staff)</li>
-            <li><strong class="text-ink">What brings you to clinical AI</strong></li>
-            <li><strong class="text-ink">What you'd like to be part of</strong> (journal club, a research project, curriculum work, industry work, open to anything)</li>
-            <li><strong class="text-ink">What you bring</strong> (optional - skills, prior work, ideas)</li>
-          </ul>
-        </div>
+        <form action="https://docs.google.com/forms/d/e/YOUR_REAL_GOOGLE_FORM_ID_HERE/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="bg-paper-warm/40 border border-ink/10 rounded-2xl p-6 md:p-8 space-y-6">
+          
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-usfgreen mb-2">Name *</label>
+              <input type="text" name="entry.2005620554" required class="w-full bg-paper border border-ink/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-usfgreen" placeholder="Your name">
+            </div>
+            <div>
+              <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-usfgreen mb-2">Email Address *</label>
+              <input type="email" name="entry.1045781291" required class="w-full bg-paper border border-ink/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-usfgreen" placeholder="your.email@usf.edu">
+            </div>
+          </div>
 
-        <a href="https://forms.gle/w4dyBEY8TXfP5Ae48" target="_blank" rel="noopener"
-           class="inline-flex items-center gap-2 bg-usfgreen text-paper px-7 py-4 rounded-full font-semibold hover:bg-usfgreen-deep transition shadow-lg shadow-usfgreen/20 text-sm">
-          Open signup form
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-        </a>
-        <p class="text-xs text-ink-soft/70 mt-3">Opens a Google Form. Responses go directly to taiyohanna@gmail.com.</p>
+          <div>
+            <label for="affiliation" class="block text-xs font-semibold uppercase tracking-wider text-usfgreen mb-2">USF Affiliation *</label>
+            <input type="text" name="entry.1065046570" required class="w-full bg-paper border border-ink/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-usfgreen" placeholder="e.g., MCOM, CAMLS, College of Nursing">
+          </div>
+
+          <div>
+            <label for="participation" class="block text-xs font-semibold uppercase tracking-wider text-usfgreen mb-2">Select Your Path *</label>
+            <select id="participation" name="entry.839337160" onchange="toggleFormFields(this.value)" class="w-full bg-paper border border-ink/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-usfgreen">
+              <option value="Get Announcements / Updates Only">Get Announcements / Updates Only</option>
+              <option value="Active Lab Participation">Active Lab Participation (Journal club, research, projects)</option>
+            </select>
+          </div>
+
+          <div id="active-fields" class="hidden space-y-6 pt-4 border-t border-ink/5">
+            <div>
+              <label for="role" class="block text-xs font-semibold uppercase tracking-wider text-usfgreen mb-2">Your Role</label>
+              <select name="entry.5555555" class="w-full bg-paper border border-ink/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-usfgreen">
+                <option value="">Select your role...</option>
+                <option value="Student">Student</option>
+                <option value="Resident / Fellow">Resident / Fellow</option>
+                <option value="Faculty">Faculty</option>
+                <option value="Staff">Staff</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-usfgreen mb-2">What brings you to clinical AI?</label>
+              <textarea name="entry.6666666" rows="3" class="w-full bg-paper border border-ink/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-usfgreen" placeholder="Share a brief summary..."></textarea>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-usfgreen mb-2">What would you like to be part of?</label>
+              <textarea name="entry.7777777" rows="2" class="w-full bg-paper border border-ink/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-usfgreen" placeholder="Journal club, research project, curriculum work, etc."></textarea>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="inline-flex items-center gap-2 bg-usfgreen text-paper px-7 py-4 rounded-full font-semibold hover:bg-usfgreen-deep transition shadow-lg shadow-usfgreen/20 text-sm">
+              Submit Request
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- IDEA -->
 <section id="idea" class="py-20 lg:py-28 bg-paper-warm/40 border-y border-ink/5 scroll-mt-20">
