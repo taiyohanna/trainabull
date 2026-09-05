@@ -51,5 +51,5 @@ This works the same way whether the repo is public or private.
 
 ## Contact
 
-Karim Hanna, MD, FAAFP, FAMIA
+Karim Hanna, MD, FAAFP, FAMIA, CAQHALM
 [khanna@usf.edu](mailto:khanna@usf.edu)
