@@ -22,13 +22,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:887daa5f-1a04-431c-ab9f-5af92391a098@usf-ai-collaborative
-DTSTAMP:20260904T173418Z
+DTSTAMP:20260905T150151Z
 DTSTART;TZID=America/New_York:20261002T120000
 DTEND;TZID=America/New_York:20261002T130000
-SUMMARY:USF AI Collaborative - AI Governance at an AMC
-DESCRIPTION:USF AI Collaborative - AI Governance at an AMC: Development\, Implementation & Monitoring\n\n12:00-12:30  Talk: AI Governance at an AMC. Development\, implementation and monitoring at an academic medical center.\nPresented by Mason Pearce\, MD\, Clinical Informatics Fellow\n\n12:30-1:00  Student research topics. Open discussion of research questions and projects for students seeking mentorship.\n\nJoin on Microsoft Teams: https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGYzYzljOGEtNjA5ZC00YzRhLTg2OTktNzNkMDI4YjMxYWNj%40thread.v2/0?context=%7b%22Tid%22%3a%22741bf7de-e2e5-46df-8d67-82607df9deaa%22%2c%22Oid%22%3a%22ce64d6d8-fbf6-4757-bf3b-207bc380294e%22%7d
+SUMMARY:USF AI Collaborative Journal Club - AI Governance at an AMC
+DESCRIPTION:USF AI Collaborative Journal Club No. 1 - AI Governance at an AMC: Development\, Implementation & Monitoring\n\n12:00-12:30  Talk: AI Governance at an AMC. Development\, implementation and monitoring at an academic medical center.\nPresented by Mason Pearce\, MD\, Clinical Informatics Fellow\n\n12:30-1:00  Student research topics. Open discussion of research questions and projects for students seeking mentorship.\n\nJoin on Microsoft Teams: https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGYzYzljOGEtNjA5ZC00YzRhLTg2OTktNzNkMDI4YjMxYWNj%40thread.v2/0?context=%7b%22Tid%22%3a%22741bf7de-e2e5-46df-8d67-82607df9deaa%22%2c%22Oid%22%3a%22ce64d6d8-fbf6-4757-bf3b-207bc380294e%22%7d
 LOCATION:Microsoft Teams
 URL:https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGYzYzljOGEtNjA5ZC00YzRhLTg2OTktNzNkMDI4YjMxYWNj%40thread.v2/0?context=%7b%22Tid%22%3a%22741bf7de-e2e5-46df-8d67-82607df9deaa%22%2c%22Oid%22%3a%22ce64d6d8-fbf6-4757-bf3b-207bc380294e%22%7d
+SEQUENCE:1
 STATUS:CONFIRMED
 BEGIN:VALARM
 TRIGGER:-PT15M
