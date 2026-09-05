@@ -18,9 +18,8 @@
 <link rel="stylesheet" href="assets/css/styles.css" />
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 <style>
-  /* Landing page is a single static viewport. Prevent body scroll on tall screens; allow overflow on small. */
-  html, body { height: 100%; }
-  @media (min-height: 720px) and (min-width: 768px) { body.landing { overflow: hidden; } }
+  /* Hero fills the first viewport; the events section sits below it, so the page scrolls. */
+  #events { scroll-margin-top: 5rem; }
 </style>
 </head>
 
@@ -99,6 +98,12 @@
       Or just want updates?
       <a href="https://forms.gle/w4dyBEY8TXfP5Ae48" target="_blank" rel="noopener" class="text-usfgreen font-semibold hover:text-usfgreen-deep underline underline-offset-2 decoration-usfgold-warm decoration-2">Sign up for announcements →</a>
     </p>
+
+    <a href="#events" class="group mt-8 inline-flex items-center gap-3 rounded-full border border-usfgreen/20 bg-paper/80 pl-2 pr-5 py-2 text-sm text-ink-soft hover:border-usfgreen/40 hover:text-ink transition">
+      <span class="inline-flex items-center rounded-full bg-usfgreen px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-paper">Next meeting</span>
+      <span><span class="font-semibold text-ink">Oct 2</span> · AI Governance at an AMC</span>
+      <svg class="w-4 h-4 text-usfgreen group-hover:translate-y-0.5 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+    </a>
   </div>
 
   <!-- corner mark -->
@@ -106,6 +111,83 @@
     USF · Tampa, FL · <a href="https://github.com/taiyohanna/trainabull" class="hover:text-usfgreen transition">GitHub</a>
   </div>
 </main>
+
+<!-- EVENTS -->
+<section id="events" class="py-20 lg:py-28 bg-paper-warm/40 border-t border-ink/5">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10">
+    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-4">Events</p>
+    <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink leading-tight mb-3">Open to anyone at USF.</h2>
+    <p class="text-lg text-ink-soft max-w-3xl mb-10 leading-relaxed">Clinicians, educators, researchers, and students exploring how artificial intelligence should be built, governed, and taught. Drop in on Teams, no membership required.</p>
+
+    <article class="bg-gradient-to-br from-usfgreen to-usfgreen-deep rounded-3xl p-8 md:p-12 text-paper relative overflow-hidden">
+      <div class="absolute inset-0 opacity-[0.08]" style="background-image: radial-gradient(circle at 1px 1px, #CFC493 1px, transparent 0); background-size: 24px 24px;"></div>
+      <div class="relative">
+        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgold-warm mb-4">Next Meeting</p>
+        <h3 class="font-display text-3xl md:text-5xl font-semibold leading-tight mb-3">AI Governance at an AMC</h3>
+        <p class="text-lg md:text-xl text-paper/85 mb-6">Development, Implementation &amp; Monitoring</p>
+
+        <div class="border-l-4 border-usfgold-warm pl-4 mb-10">
+          <p class="font-display text-xl font-semibold">Mason Pearce, MD</p>
+          <p class="text-paper/70 text-sm">Clinical Informatics Fellow</p>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-6 mb-10 pb-10 border-b border-paper/15">
+          <div>
+            <p class="text-xs uppercase tracking-wider text-paper/60 mb-1">Date</p>
+            <p class="font-display text-xl">Friday, October 2, 2026</p>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-wider text-paper/60 mb-1">Time</p>
+            <p class="font-display text-xl">12:00 - 1:00 PM ET</p>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-wider text-paper/60 mb-1">Format</p>
+            <p class="font-display text-xl">Virtual on Microsoft Teams</p>
+          </div>
+        </div>
+
+        <p class="text-xs uppercase tracking-wider text-paper/60 mb-4">Agenda</p>
+        <div class="space-y-4 mb-10 max-w-3xl">
+          <div class="sm:flex sm:gap-6">
+            <p class="font-semibold text-usfgold-warm text-sm sm:w-32 shrink-0 pt-0.5">12:00 - 12:30</p>
+            <div>
+              <p class="font-semibold">Talk: AI Governance at an AMC</p>
+              <p class="text-paper/75 text-sm leading-relaxed">Development, implementation, and monitoring at an academic medical center.</p>
+            </div>
+          </div>
+          <div class="sm:flex sm:gap-6 pt-4 border-t border-paper/10">
+            <p class="font-semibold text-usfgold-warm text-sm sm:w-32 shrink-0 pt-0.5">12:30 - 1:00</p>
+            <div>
+              <p class="font-semibold">Student Research Topics</p>
+              <p class="text-paper/75 text-sm leading-relaxed">Open discussion of research questions and projects for students seeking mentorship.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGYzYzljOGEtNjA5ZC00YzRhLTg2OTktNzNkMDI4YjMxYWNj%40thread.v2/0?context=%7b%22Tid%22%3a%22741bf7de-e2e5-46df-8d67-82607df9deaa%22%2c%22Oid%22%3a%22ce64d6d8-fbf6-4757-bf3b-207bc380294e%22%7d" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-paper text-usfgreen px-6 py-3 rounded-full font-semibold hover:bg-paper-warm transition">
+            Join on Teams
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="calendar/usf-ai-collaborative-2026-10-02.ics" download class="inline-flex items-center gap-2 border border-paper/30 text-paper px-6 py-3 rounded-full font-semibold hover:bg-paper/10 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3M3 11h18M5 5h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"/></svg>
+            Add to calendar
+          </a>
+          <a href="assets/img/events/2026-10-02-ai-governance-flyer.png" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-paper/30 text-paper px-6 py-3 rounded-full font-semibold hover:bg-paper/10 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+            Flyer
+          </a>
+        </div>
+        <p class="mt-4 text-xs text-paper/60">The calendar file carries the Teams link, so the invite joins straight from your calendar.</p>
+      </div>
+    </article>
+
+    <p class="mt-8 text-sm text-ink-soft">
+      Looking for the monthly paper discussion?
+      <a href="journal-club.html" class="text-usfgreen font-semibold hover:text-usfgreen-deep underline underline-offset-2 decoration-usfgold-warm decoration-2">Journal Club →</a>
+    </p>
+  </div>
+</section>
 
 <script>
   document.getElementById('mobileToggle').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });
