@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Events - TRAIN-A-BULL</title>
+<meta name="description" content="USF events at the intersection of medicine, research, and artificial intelligence - symposia and research days worth putting on your calendar." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: { usfgreen: { DEFAULT: '#006747', deep: '#004D34', dark: '#00321F' }, usfgold: { DEFAULT: '#CFC493', warm: '#E8A317', bright: '#FDB927' }, ink: { DEFAULT: '#0F1714', soft: '#3B4A44' }, paper: { DEFAULT: '#FAFAF7', warm: '#F4F1E8' } },
+    fontFamily: { display: ['Fraunces', 'Georgia', 'serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }
+  }}};
+</script>
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+</head>
+
+<body class="bg-paper text-ink font-sans antialiased">
+
+<header class="fixed top-0 inset-x-0 z-50 bg-paper/85 backdrop-blur-md border-b border-ink/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+    <a href="index.html" class="font-display font-bold text-xl tracking-tight whitespace-nowrap">
+      <span class="text-usfgreen">USF </span><span class="text-usfgold-warm">AI</span><span class="text-usfgreen"> Collaborative</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-soft">
+      <a href="about.html" class="hover:text-usfgreen transition">The Lab</a>
+      <a href="projects.html" class="hover:text-usfgreen transition">Projects</a>
+      <a href="journal-club.html" class="hover:text-usfgreen transition">Journal Club</a>
+      <a href="events.html" class="text-usfgreen font-semibold">Events</a>
+      <a href="learn.html" class="hover:text-usfgreen transition">Learn</a>
+      <a href="get-involved.html" class="inline-flex items-center gap-2 bg-usfgreen text-paper px-4 py-2 rounded-full hover:bg-usfgreen-deep transition">Get Involved</a>
+    </nav>
+    <button id="mobileToggle" class="md:hidden p-2" aria-label="Menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden border-t border-ink/5 bg-paper">
+    <nav class="px-6 py-4 flex flex-col gap-3 text-sm font-medium">
+      <a href="about.html" class="py-2">The Lab</a>
+      <a href="projects.html" class="py-2">Projects</a>
+      <a href="journal-club.html" class="py-2">Journal Club</a>
+      <a href="events.html" class="py-2 text-usfgreen font-semibold">Events</a>
+      <a href="learn.html" class="py-2">Learn</a>
+      <a href="get-involved.html" class="py-2 text-usfgreen font-semibold">Get Involved</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="pt-32 pb-16 lg:pt-44 lg:pb-20 border-b border-ink/5">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10">
+    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-4">Events</p>
+    <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight text-ink mb-6">Where the campus gets together.</h1>
+    <p class="text-xl md:text-2xl text-ink-soft max-w-3xl leading-relaxed">USF symposia and research days worth putting on your calendar: places to present work, meet collaborators, and see what's happening across medicine, research, and AI.</p>
+  </div>
+</section>
+
+<!-- EVENT LIST -->
+<section class="py-20 lg:py-28">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10">
+    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-4">USF Events</p>
+    <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink leading-tight mb-10">On our radar.</h2>
+
+    <div class="space-y-6">
+      <a href="https://health.usf.edu/medicine/dme/meded-symposium" target="_blank" rel="noopener" class="block bg-paper-warm/40 rounded-2xl p-8 border border-ink/10 hover:border-usfgreen/40 transition group">
+        <p class="text-xs uppercase tracking-wider text-ink-soft mb-2">USF Health &middot; Morsani College of Medicine</p>
+        <h3 class="font-display text-2xl font-semibold text-ink mb-3 group-hover:text-usfgreen transition">The USF Health MedEd Symposium</h3>
+        <p class="text-ink-soft leading-relaxed mb-4">An annual gathering on medical education: teaching, curriculum, and increasingly, how AI fits into training the next generation of clinicians.</p>
+        <span class="text-sm font-semibold text-usfgreen">health.usf.edu &rarr;</span>
+      </a>
+
+      <a href="https://health.usf.edu/research/research-day" target="_blank" rel="noopener" class="block bg-paper-warm/40 rounded-2xl p-8 border border-ink/10 hover:border-usfgreen/40 transition group">
+        <p class="text-xs uppercase tracking-wider text-ink-soft mb-2">USF Health &middot; Office of Research</p>
+        <h3 class="font-display text-2xl font-semibold text-ink mb-3 group-hover:text-usfgreen transition">The USF Health Research Day</h3>
+        <p class="text-ink-soft leading-relaxed mb-4">The campus-wide research showcase, with poster and oral sessions open to students, residents, fellows, and faculty across USF Health.</p>
+        <span class="text-sm font-semibold text-usfgreen">health.usf.edu &rarr;</span>
+      </a>
+
+      <a href="https://www.usf.edu/ai-cybersecurity-computing/centers/ai-x/about/symposium-26.aspx" target="_blank" rel="noopener" class="block bg-paper-warm/40 rounded-2xl p-8 border border-ink/10 hover:border-usfgreen/40 transition group">
+        <p class="text-xs uppercase tracking-wider text-ink-soft mb-2">USF Bellini College &middot; AI+X Center</p>
+        <h3 class="font-display text-2xl font-semibold text-ink mb-3 group-hover:text-usfgreen transition">The USF AI+X Symposium</h3>
+        <p class="text-ink-soft leading-relaxed mb-4">The university's cross-disciplinary AI symposium, pairing artificial intelligence with every other field on campus, health care included.</p>
+        <span class="text-sm font-semibold text-usfgreen">usf.edu &rarr;</span>
+      </a>
+    </div>
+
+    <p class="mt-10 text-sm text-ink-soft italic">Dates and calls for abstracts are posted on each event's own page. Check the links for the current year's details.</p>
+  </div>
+</section>
+
+<!-- SUGGEST AN EVENT -->
+<section class="py-24 bg-ink text-paper">
+  <div class="max-w-3xl mx-auto px-6 lg:px-10 text-center">
+    <h2 class="font-display text-3xl md:text-4xl font-semibold mb-4">Know an event we should list?</h2>
+    <p class="text-paper/75 mb-8 text-lg leading-relaxed">Conferences, symposia, workshops, hackathons: if it's relevant to AI and health at USF, send it our way and we'll add it here.</p>
+    <a href="mailto:khanna@usf.edu?subject=TRAIN-A-BULL%20-%20Event%20Suggestion" class="inline-flex items-center gap-2 bg-usfgold-warm text-ink px-7 py-4 rounded-full font-semibold hover:bg-usfgold-bright transition">Suggest an event &rarr;</a>
+  </div>
+</section>
+
+<footer class="bg-ink text-paper/70 py-16 border-t border-paper/10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid md:grid-cols-4 gap-10 mb-12">
+      <div class="md:col-span-2">
+        <div class="font-display font-bold text-2xl mb-4"><span class="text-paper">TR</span><span class="text-usfgold-warm text-3xl">AI</span><span class="text-paper">N-A-BULL</span></div>
+        <p class="text-sm leading-relaxed max-w-md">A USF community advancing clinical informatics and artificial intelligence together. Based in Tampa, FL.</p>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wider text-paper mb-4">Explore</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="about.html" class="hover:text-usfgold-warm transition">The Lab</a></li>
+          <li><a href="projects.html" class="hover:text-usfgold-warm transition">Projects</a></li>
+          <li><a href="journal-club.html" class="hover:text-usfgold-warm transition">Journal Club</a></li>
+          <li><a href="events.html" class="hover:text-usfgold-warm transition">Events</a></li>
+          <li><a href="learn.html" class="hover:text-usfgold-warm transition">Learn</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wider text-paper mb-4">Get Involved</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="get-involved.html#join" class="hover:text-usfgold-warm transition">Join the lab</a></li>
+          <li><a href="get-involved.html#idea" class="hover:text-usfgold-warm transition">Share a problem or idea</a></li>
+          <li><a href="get-involved.html#partners" class="hover:text-usfgold-warm transition">Industry partners</a></li>
+          <li><a href="mailto:khanna@usf.edu" class="hover:text-usfgold-warm transition">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-paper/10 flex flex-col md:flex-row justify-between gap-4 text-xs">
+      <p>(c) <span id="year"></span> TR<span class="text-usfgold-warm">AI</span>N-A-BULL &middot; A USF community &middot; Tampa, FL</p>
+      <p>Built openly on <a href="https://github.com/taiyohanna/trainabull" class="underline hover:text-usfgold-warm transition">GitHub</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('mobileToggle').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });
+</script>
+</body>
+</html>
