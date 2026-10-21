@@ -29,7 +29,7 @@
     <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-soft">
       <a href="about.html" class="hover:text-usfgreen transition">The Lab</a>
       <a href="projects.html" class="hover:text-usfgreen transition">Projects</a>
-      <a href="journal-club.html" class="hover:text-usfgreen transition">Journal Club</a>
+      <a href="index.html#meetings" class="hover:text-usfgreen transition">Meetings</a>
       <a href="events.html" class="text-usfgreen font-semibold">Events</a>
       <a href="learn.html" class="hover:text-usfgreen transition">Learn</a>
       <a href="get-involved.html" class="inline-flex items-center gap-2 bg-usfgreen text-paper px-4 py-2 rounded-full hover:bg-usfgreen-deep transition">Get Involved</a>
@@ -42,7 +42,7 @@
     <nav class="px-6 py-4 flex flex-col gap-3 text-sm font-medium">
       <a href="about.html" class="py-2">The Lab</a>
       <a href="projects.html" class="py-2">Projects</a>
-      <a href="journal-club.html" class="py-2">Journal Club</a>
+      <a href="index.html#meetings" class="py-2">Meetings</a>
       <a href="events.html" class="py-2 text-usfgreen font-semibold">Events</a>
       <a href="learn.html" class="py-2">Learn</a>
       <a href="get-involved.html" class="py-2 text-usfgreen font-semibold">Get Involved</a>
@@ -66,6 +66,14 @@
     <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink leading-tight mb-10">On our radar.</h2>
 
     <div class="space-y-6">
+      <div data-collab-next-compact="card" data-collab-href="index.html#meetings">
+        <a href="index.html#meetings" class="block bg-gradient-to-br from-usfgreen to-usfgreen-deep text-paper rounded-2xl p-8 hover:shadow-xl hover:shadow-usfgreen/20 transition group">
+          <p class="text-xs uppercase tracking-wider text-usfgold-warm mb-2">USF AI Collaborative &middot; Monthly on Teams</p>
+          <h3 class="font-display text-2xl font-semibold mb-3">Monthly meetings, open to anyone at USF</h3>
+          <p class="text-paper/80 leading-relaxed mb-4">A 30-minute talk, then 30 minutes on student research topics. Fridays, 12:00 - 1:00 PM ET.</p>
+          <span class="text-sm font-semibold text-usfgold-warm group-hover:text-usfgold-bright">See the schedule &rarr;</span>
+        </a>
+      </div>
       <a href="https://health.usf.edu/medicine/dme/meded-symposium" target="_blank" rel="noopener" class="block bg-paper-warm/40 rounded-2xl p-8 border border-ink/10 hover:border-usfgreen/40 transition group">
         <p class="text-xs uppercase tracking-wider text-ink-soft mb-2">USF Health &middot; Morsani College of Medicine</p>
         <h3 class="font-display text-2xl font-semibold text-ink mb-3 group-hover:text-usfgreen transition">The USF Health MedEd Symposium</h3>
@@ -113,7 +121,7 @@
         <ul class="space-y-2 text-sm">
           <li><a href="about.html" class="hover:text-usfgold-warm transition">The Lab</a></li>
           <li><a href="projects.html" class="hover:text-usfgold-warm transition">Projects</a></li>
-          <li><a href="journal-club.html" class="hover:text-usfgold-warm transition">Journal Club</a></li>
+          <li><a href="index.html#meetings" class="hover:text-usfgold-warm transition">Meetings</a></li>
           <li><a href="events.html" class="hover:text-usfgold-warm transition">Events</a></li>
           <li><a href="learn.html" class="hover:text-usfgold-warm transition">Learn</a></li>
         </ul>
@@ -135,6 +143,7 @@
   </div>
 </footer>
 
+<script src="assets/js/collaborative.js" defer></script>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
   document.getElementById('mobileToggle').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });

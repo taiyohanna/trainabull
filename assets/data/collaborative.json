@@ -1,0 +1,118 @@
+{
+  "series": "USF AI Collaborative",
+  "tagline": "Clinicians, educators, researchers and students at USF exploring how artificial intelligence should be built, governed and taught.",
+  "teams_url": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGYzYzljOGEtNjA5ZC00YzRhLTg2OTktNzNkMDI4YjMxYWNj%40thread.v2/0?context=%7b%22Tid%22%3a%22741bf7de-e2e5-46df-8d67-82607df9deaa%22%2c%22Oid%22%3a%22ce64d6d8-fbf6-4757-bf3b-207bc380294e%22%7d",
+  "qr": "assets/collaborative/usf-ai-collaborative-teams-qr.png",
+  "agenda": [
+    {
+      "start": "12:00",
+      "end": "12:30",
+      "what": "Talk"
+    },
+    {
+      "start": "12:30",
+      "end": "13:00",
+      "what": "Student Research Topics",
+      "detail": "Open discussion of research questions and projects for students"
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-10-02",
+      "start": "12:00",
+      "end": "13:00",
+      "tz": "America/New_York",
+      "uid": "a1525549-c3fc-46e2-8ed8-1073683e8d15@usf-ai-collaborative",
+      "title": "AI Governance at an AMC",
+      "subtitle": "Development, Implementation & Monitoring",
+      "speaker": "Mason Pearce, MD",
+      "roles": [
+        "Clinical Informatics Fellow"
+      ],
+      "photo": "assets/img/speakers/pearce.jpg",
+      "bio": null,
+      "bio_short": null,
+      "summary": "Development, implementation and monitoring at an academic medical center",
+      "tbd_title": false,
+      "flyer_pdf": "assets/collaborative/usf-ai-collaborative-flyer-oct-2.pdf",
+      "flyer_png": "assets/collaborative/usf-ai-collaborative-flyer-oct-2.png",
+      "ics": "assets/collaborative/usf-ai-collaborative-oct-2.ics",
+      "slides": "assets/slides/2026-10-02-ai-governance-pearce.pdf",
+      "recording": null
+    },
+    {
+      "date": "2026-11-06",
+      "start": "12:00",
+      "end": "13:00",
+      "tz": "America/New_York",
+      "uid": "3b3a68aa-1314-44da-ad39-d69ee1713480@usf-ai-collaborative",
+      "title": "LLM-Generated Clinical Summaries to Augment Oncology Care",
+      "subtitle": null,
+      "speaker": "Manuel Fanarjian, MD",
+      "roles": [
+        "Director of Clinical Informatics, Dana-Farber Cancer Institute"
+      ],
+      "photo": "assets/img/speakers/fanarjian.jpg",
+      "bio": "Manuel Fanarjian is a palliative care physician and the Director of Clinical Informatics at Dana-Farber Cancer Institute. Prior to a career in medicine, he was a biomedical engineer, and has industry experience in medical devices and digital health technologies. He is a graduate of Duke University and UNC School of Medicine and did his post-graduate training at the University of Pennsylvania (Internal Medicine) and Massachusetts General Hospital/Brigham & Women's Hospital (Hospice and Palliative Medicine). He additionally completed a Biodesign fellowship at Harvard Medical School, and he has a deep interest in adapting systems of care delivery in ways that improve the experience of patients and families, as well as the clinicians and staff who serve them.",
+      "bio_short": "Dr. Fanarjian is a palliative care physician and former biomedical engineer with industry experience in medical devices and digital health. A graduate of Duke and UNC School of Medicine, he trained in Internal Medicine at Penn and in Hospice and Palliative Medicine at MGH/Brigham, and completed a Biodesign fellowship at Harvard Medical School.",
+      "summary": "Using large language models to summarize the oncology record for clinicians and patients",
+      "tbd_title": false,
+      "flyer_pdf": "assets/collaborative/usf-ai-collaborative-flyer-nov-6.pdf",
+      "flyer_png": "assets/collaborative/usf-ai-collaborative-flyer-nov-6.png",
+      "ics": "assets/collaborative/usf-ai-collaborative-nov-6.ics",
+      "slides": null,
+      "recording": null
+    },
+    {
+      "date": "2026-12-04",
+      "start": "12:00",
+      "end": "13:00",
+      "tz": "America/New_York",
+      "uid": "5d2b732b-4124-4527-ba99-7da243b33cf8@usf-ai-collaborative",
+      "title": "AI in Oncology",
+      "subtitle": "Diagnosis, Treatment & Surveillance",
+      "speaker": "Thanh Thieu, PhD",
+      "roles": [
+        "Assistant Faculty Member, Machine Learning Department, Moffitt Cancer Center and Research Institute",
+        "Assistant Professor, Department of Oncological Sciences, USF Morsani College of Medicine"
+      ],
+      "photo": "assets/img/speakers/thieu.jpg",
+      "bio": null,
+      "bio_short": null,
+      "summary": "How machine learning is reshaping cancer diagnosis, treatment selection and surveillance",
+      "tbd_title": false,
+      "flyer_pdf": "assets/collaborative/usf-ai-collaborative-flyer-dec-4.pdf",
+      "flyer_png": "assets/collaborative/usf-ai-collaborative-flyer-dec-4.png",
+      "ics": "assets/collaborative/usf-ai-collaborative-dec-4.ics",
+      "slides": null,
+      "recording": null
+    },
+    {
+      "date": "2027-01-08",
+      "start": "12:00",
+      "end": "13:00",
+      "tz": "America/New_York",
+      "uid": "d50c10d2-e7c7-4074-854f-7f50932dee6a@usf-ai-collaborative",
+      "title": "Leading AI at an Academic Health System",
+      "subtitle": null,
+      "speaker": "Saif Khairat, PhD, MPH, FACMI",
+      "roles": [
+        "Vice Provost for Artificial Intelligence & Chief AI Officer",
+        "Beerstecher-Blackwell Distinguished Professor",
+        "Principal Investigator, Center for Virtual Care Value and Excellence (ViVE)",
+        "Associate Director, Carolina Health Informatics Program (CHIP)",
+        "University of North Carolina at Chapel Hill"
+      ],
+      "photo": "assets/img/speakers/khairat.jpg",
+      "bio": null,
+      "bio_short": null,
+      "summary": "Perspectives from UNC's Chief AI Officer",
+      "tbd_title": true,
+      "flyer_pdf": "assets/collaborative/usf-ai-collaborative-flyer-jan-8.pdf",
+      "flyer_png": "assets/collaborative/usf-ai-collaborative-flyer-jan-8.png",
+      "ics": "assets/collaborative/usf-ai-collaborative-jan-8.ics",
+      "slides": null,
+      "recording": null
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//USF AI Collaborative//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5d2b732b-4124-4527-ba99-7da243b33cf8@usf-ai-collaborative
+SEQUENCE:1
+DTSTAMP:20261021T150008Z
+DTSTART;TZID=America/New_York:20261204T120000
+DTEND;TZID=America/New_York:20261204T130000
+SUMMARY:USF AI Collaborative: AI in Oncology
+DESCRIPTION:USF AI Collaborative: AI in Oncology: Diagnosis\, Treatment & S
+ urveillance\n\n12:00 - 12:30  Talk: AI in Oncology\nPresented by Thanh Thi
+ eu\, PhD\nAssistant Faculty Member\, Machine Learning Department\, Moffitt
+  Cancer Center and Research Institute\nAssistant Professor\, Department of
+  Oncological Sciences\, USF Morsani College of Medicine\n12:30 - 1:00  Stu
+ dent Research Topics: open discussion\n\nJoin on Microsoft Teams: https://
+ teams.microsoft.com/l/meetup-join/19%3ameeting_OGYzYzljOGEtNjA5ZC00YzRhLTg
+ 2OTktNzNkMDI4YjMxYWNj%40thread.v2/0?context=%7b%22Tid%22%3a%22741bf7de-e2e
+ 5-46df-8d67-82607df9deaa%22%2c%22Oid%22%3a%22ce64d6d8-fbf6-4757-bf3b-207bc
+ 380294e%22%7d
+LOCATION:Microsoft Teams
+URL:https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGYzYzljOGEtNjA5
+ ZC00YzRhLTg2OTktNzNkMDI4YjMxYWNj%40thread.v2/0?context=%7b%22Tid%22%3a%227
+ 41bf7de-e2e5-46df-8d67-82607df9deaa%22%2c%22Oid%22%3a%22ce64d6d8-fbf6-4757
+ -bf3b-207bc380294e%22%7d
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:USF AI Collaborative starts in 15 minutes
+END:VALARM
+END:VEVENT
+END:VCALENDAR

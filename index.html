@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>TRAIN-A-BULL - Training Bulls for the age of AI</title>
 <meta name="description" content="TRAIN-A-BULL is the USF collaborative for clinical informatics and artificial intelligence in healthcare - bridging medicine, nursing, engineering, and information sciences to advance AI in care, education, and research." />
+<!-- Open Graph: static, set by hand to the next meeting's flyer when this was written (Nov 6, 2026). The page itself rolls over on its own; update these tags when you want link previews to show a newer flyer. -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="USF AI Collaborative" />
+<meta property="og:title" content="USF AI Collaborative - Monthly meetings on Microsoft Teams" />
+<meta property="og:description" content="Clinicians, educators, researchers and students at USF exploring how AI should be built, governed and taught. Next: Nov 6, Manuel Fanarjian, MD on LLM-generated clinical summaries in oncology." />
+<meta property="og:url" content="https://usfaicollaborative.com/" />
+<meta property="og:image" content="https://usfaicollaborative.com/assets/collaborative/usf-ai-collaborative-flyer-nov-6.png" />
+<meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -18,8 +26,8 @@
 <link rel="stylesheet" href="assets/css/styles.css" />
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 <style>
-  /* Hero fills the first viewport; the events section sits below it, so the page scrolls. */
-  #events { scroll-margin-top: 5rem; }
+  /* Hero fills the first viewport; the meetings section sits below it, so the page scrolls. */
+  #meetings { scroll-margin-top: 5rem; }
 </style>
 </head>
 
@@ -34,7 +42,7 @@
     <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-soft">
       <a href="about.html" class="hover:text-usfgreen transition">The Lab</a>
       <a href="projects.html" class="hover:text-usfgreen transition">Projects</a>
-      <a href="journal-club.html" class="hover:text-usfgreen transition">Journal Club</a>
+      <a href="#meetings" class="hover:text-usfgreen transition">Meetings</a>
       <a href="events.html" class="hover:text-usfgreen transition">Events</a>
       <a href="learn.html" class="hover:text-usfgreen transition">Learn</a>
       <a href="get-involved.html" class="inline-flex items-center gap-2 bg-usfgreen text-paper px-4 py-2 rounded-full hover:bg-usfgreen-deep transition">Get Involved →</a>
@@ -47,7 +55,7 @@
     <nav class="px-6 py-4 flex flex-col gap-3 text-sm font-medium">
       <a href="about.html" class="py-2">The Lab</a>
       <a href="projects.html" class="py-2">Projects</a>
-      <a href="journal-club.html" class="py-2">Journal Club</a>
+      <a href="#meetings" class="py-2">Meetings</a>
       <a href="events.html" class="py-2">Events</a>
       <a href="learn.html" class="py-2">Learn</a>
       <a href="get-involved.html" class="py-2 text-usfgreen font-semibold">Get Involved →</a>
@@ -101,11 +109,12 @@
       <a href="https://forms.gle/w4dyBEY8TXfP5Ae48" target="_blank" rel="noopener" class="text-usfgreen font-semibold hover:text-usfgreen-deep underline underline-offset-2 decoration-usfgold-warm decoration-2">Sign up for announcements →</a>
     </p>
 
-    <a href="#events" class="group mt-8 inline-flex items-center gap-3 rounded-full border border-usfgreen/20 bg-paper/80 pl-2 pr-5 py-2 text-sm text-ink-soft hover:border-usfgreen/40 hover:text-ink transition">
-      <span class="inline-flex items-center rounded-full bg-usfgreen px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-paper">Missed it?</span>
-      <span><span class="font-semibold text-ink">Oct 2</span> · AI Governance slides are posted</span>
-      <svg class="w-4 h-4 text-usfgreen group-hover:translate-y-0.5 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
-    </a>
+    <div class="mt-8" data-collab-next-compact="banner" data-collab-href="#meetings">
+      <a href="#meetings" class="group inline-flex items-center gap-3 rounded-full border border-usfgreen/20 bg-paper/80 pl-2 pr-5 py-2 text-sm text-ink-soft hover:border-usfgreen/40 hover:text-ink transition">
+        <span class="inline-flex items-center rounded-full bg-usfgreen px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-paper">Monthly</span>
+        <span>Meetings on Microsoft Teams, open to anyone at USF</span>
+      </a>
+    </div>
   </div>
 
   <!-- corner mark -->
@@ -114,84 +123,37 @@
   </div>
 </main>
 
-<!-- EVENTS -->
-<section id="events" class="py-20 lg:py-28 bg-paper-warm/40 border-t border-ink/5">
+<!-- MEETINGS: rendered from assets/data/collaborative.json by assets/js/collaborative.js -->
+<section id="meetings" class="py-20 lg:py-28 bg-paper-warm/40 border-t border-ink/5">
   <div class="max-w-5xl mx-auto px-6 lg:px-10">
-    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-4">Events</p>
-    <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink leading-tight mb-3">Open to anyone at USF.</h2>
-    <p class="text-lg text-ink-soft max-w-3xl mb-10 leading-relaxed">Clinicians, educators, researchers, and students exploring how artificial intelligence should be built, governed, and taught. Drop in on Teams, no membership required.</p>
+    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgreen mb-4">USF AI Collaborative &middot; Monthly Meetings</p>
+    <h2 class="font-display text-3xl md:text-5xl font-semibold text-ink leading-tight mb-3">Open to anyone at USF.</h2>
+    <p class="text-lg text-ink-soft max-w-3xl mb-10 leading-relaxed">Clinicians, educators, researchers and students exploring how artificial intelligence should be built, governed and taught. We meet monthly on Fridays, 12:00 - 1:00 PM ET on Microsoft Teams: a 30-minute talk, then 30 minutes on student research topics. No membership required.</p>
 
-    <article class="bg-gradient-to-br from-usfgreen to-usfgreen-deep rounded-3xl p-8 md:p-12 text-paper relative overflow-hidden">
-      <div class="absolute inset-0 opacity-[0.08]" style="background-image: radial-gradient(circle at 1px 1px, #CFC493 1px, transparent 0); background-size: 24px 24px;"></div>
-      <div class="relative">
-        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-usfgold-warm mb-4">Past Session · Journal Club No. 1</p>
-        <h3 class="font-display text-3xl md:text-5xl font-semibold leading-tight mb-3">AI Governance at an AMC</h3>
-        <p class="text-lg md:text-xl text-paper/85 mb-6">Development, Implementation &amp; Monitoring</p>
+    <div data-collab-next>
+      <p class="rounded-2xl border border-ink/10 bg-paper p-6 text-ink-soft">Monthly on Fridays, 12:00 - 1:00 PM ET. <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGYzYzljOGEtNjA5ZC00YzRhLTg2OTktNzNkMDI4YjMxYWNj%40thread.v2/0?context=%7b%22Tid%22%3a%22741bf7de-e2e5-46df-8d67-82607df9deaa%22%2c%22Oid%22%3a%22ce64d6d8-fbf6-4757-bf3b-207bc380294e%22%7d" target="_blank" rel="noopener" class="font-semibold text-usfgreen underline underline-offset-2 decoration-usfgold-warm decoration-2">Join on Microsoft Teams</a></p>
+    </div>
 
-        <div class="flex items-center gap-4 mb-10">
-          <img src="assets/img/speakers/pearce.jpg" alt="Mason Pearce, MD" class="w-20 h-20 rounded-full object-cover object-top ring-2 ring-usfgold-warm/60 shrink-0" />
-          <div class="border-l-4 border-usfgold-warm pl-4">
-            <p class="font-display text-xl font-semibold">Mason Pearce, MD</p>
-            <p class="text-paper/70 text-sm">Clinical Informatics Fellow</p>
-          </div>
-        </div>
+    <div data-collab-section="upcoming" class="mt-16" hidden>
+      <h3 class="font-display text-2xl md:text-3xl font-semibold text-ink mb-6">Coming up</h3>
+      <ol data-collab-upcoming class="space-y-4"></ol>
+    </div>
 
-        <div class="grid sm:grid-cols-3 gap-6 mb-10 pb-10 border-b border-paper/15">
-          <div>
-            <p class="text-xs uppercase tracking-wider text-paper/60 mb-1">Date</p>
-            <p class="font-display text-xl">Friday, October 2, 2026</p>
-          </div>
-          <div>
-            <p class="text-xs uppercase tracking-wider text-paper/60 mb-1">Time</p>
-            <p class="font-display text-xl">12:00 - 1:00 PM ET</p>
-          </div>
-          <div>
-            <p class="text-xs uppercase tracking-wider text-paper/60 mb-1">Format</p>
-            <p class="font-display text-xl">Virtual on Microsoft Teams</p>
-          </div>
-        </div>
+    <div data-collab-section="past" class="mt-16" hidden>
+      <h3 class="font-display text-2xl md:text-3xl font-semibold text-ink mb-2">Past meetings</h3>
+      <p class="text-ink-soft mb-6">Slides and recordings are linked here once they're posted.</p>
+      <ol data-collab-past class="space-y-4"></ol>
+    </div>
 
-        <p class="text-xs uppercase tracking-wider text-paper/60 mb-4">Agenda</p>
-        <div class="space-y-4 mb-10 max-w-3xl">
-          <div class="sm:flex sm:gap-6">
-            <p class="font-semibold text-usfgold-warm text-sm sm:w-32 shrink-0 pt-0.5">12:00 - 12:30</p>
-            <div>
-              <p class="font-semibold">Talk: AI Governance at an AMC</p>
-              <p class="text-paper/75 text-sm leading-relaxed">Development, implementation, and monitoring at an academic medical center.</p>
-            </div>
-          </div>
-          <div class="sm:flex sm:gap-6 pt-4 border-t border-paper/10">
-            <p class="font-semibold text-usfgold-warm text-sm sm:w-32 shrink-0 pt-0.5">12:30 - 1:00</p>
-            <div>
-              <p class="font-semibold">Student Research Topics</p>
-              <p class="text-paper/75 text-sm leading-relaxed">Open discussion of research questions and projects for students seeking mentorship.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap gap-3">
-          <a href="assets/slides/2026-10-02-ai-governance-pearce.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-paper text-usfgreen px-6 py-3 rounded-full font-semibold hover:bg-paper-warm transition">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
-            Slides (PDF)
-          </a>
-          <a href="assets/flyers/2026-10-02-usf-ai-collaborative.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-paper/30 text-paper px-6 py-3 rounded-full font-semibold hover:bg-paper/10 transition">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
-            Flyer (PDF)
-          </a>
-        </div>
-        <p class="mt-4 text-xs text-paper/60">
-          Next session date to be announced. <a href="https://forms.gle/w4dyBEY8TXfP5Ae48" target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-paper transition">Sign up for announcements</a> to hear first.
-        </p>
-      </div>
-    </article>
-
-    <p class="mt-8 text-sm text-ink-soft">
-      This was the opening session of our monthly journal club.
-      <a href="journal-club.html" class="text-usfgreen font-semibold hover:text-usfgreen-deep underline underline-offset-2 decoration-usfgold-warm decoration-2">See how it works →</a>
-    </p>
+    <div class="mt-16 rounded-3xl bg-ink text-paper p-8 md:p-12 text-center">
+      <h3 class="font-display text-2xl md:text-3xl font-semibold mb-3">Want to present or suggest a topic?</h3>
+      <p class="text-paper/75 mb-7 leading-relaxed max-w-2xl mx-auto">Speakers, papers, projects, problems worth a room full of clinicians and engineers: send it our way.</p>
+      <a href="mailto:khanna@usf.edu?subject=USF%20AI%20Collaborative%20-%20Speaker%20Suggestion" class="inline-flex items-center gap-2 bg-usfgold-warm text-ink px-7 py-4 rounded-full font-semibold hover:bg-usfgold-bright transition">Suggest a speaker or topic &rarr;</a>
+    </div>
   </div>
 </section>
 
+<script src="assets/js/collaborative.js" defer></script>
 <script>
   document.getElementById('mobileToggle').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });
 </script>
